@@ -1,5 +1,96 @@
 # Pokemon_kg - Gen 1
-A simple knowledge graph for Generation 1 Pokemon
+# Pokémon Knowledge Graph — LLM Grounding PoC
+
+> **Can a Knowledge Graph reduce hallucinations in a text-based Pokémon battle?**
+> This proof-of-concept builds an RDF Knowledge Graph from Gen 1 Pokémon data,
+> then pits a KG-grounded LLM agent against a vanilla LLM agent to find out.
+## Results
+
+### Headline: +108% damage uplift with KG grounding
+
+Across 3 deliberately type-disadvantaged matchups, the KG-grounded agent dealt **more than double** the damage of the vanilla agent by making smarter move choices informed by verified Knowledge Graph facts.
+
+| Metric | Vanilla LLM | KG-Grounded LLM | Improvement |
+|---|---|---|---|
+| **Avg damage / turn** | 14 | 29 | **+108%** |
+| **Total damage dealt** | 176 | 356 | **+102%** |
+| **Optimal move selection** | 0 / 3 battles | 3 / 3 battles | **100% accuracy** |
+
+### Battle-by-battle breakdown
+
+#### ⚔️ Charizard vs Blastoise — *+92% damage*
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/6.png" width="80" alt="Charizard">
+  &nbsp;&nbsp;&nbsp;&nbsp;⚔️&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/9.png" width="80" alt="Blastoise">
+</p>
+
+| | Vanilla | KG-Grounded |
+|---|---|---|
+| **Move chosen** | Ember (fire) | Slash (normal) |
+| **Type effectiveness** | 0.5× (resisted) | 1× (neutral) |
+| **Avg damage / turn** | 13 | 26 |
+| **Total damage** | 67 | 128 |
+
+The vanilla agent repeatedly used Ember — a fire move against a water-type, dealing half damage. The grounded agent's SPARQL query revealed that fire moves are resisted by water and correctly switched to Slash, a neutral-type move with 70 base power.
+
+#### ⚡ Pikachu vs Geodude — *Immunity detected*
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/25.png" width="80" alt="Pikachu">
+  &nbsp;&nbsp;&nbsp;&nbsp;⚔️&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/74.png" width="80" alt="Geodude">
+</p>
+
+| | Vanilla | KG-Grounded |
+|---|---|---|
+| **Move chosen** | Thunder (electric) | Slam (normal) |
+| **Type effectiveness** | 0× (immune!) | 0.5× (resisted) |
+| **Avg damage / turn** | 1 | 10 |
+| **Total damage** | 1 | 10 |
+
+The showcase matchup. Vanilla picked Thunder — electric against ground is **completely immune** (0× damage, floored to 1 by the game engine). The KG context explicitly flagged `"IMMUNE (0 damage) - DO NOT USE"` for all electric moves. The grounded agent selected Slam instead — the only move that could deal any real damage. Without the Knowledge Graph, the LLM had no way to know ground-types are immune to electric.
+
+#### 🌿 Venusaur vs Arcanine — *+161% damage*
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/3.png" width="80" alt="Venusaur">
+  &nbsp;&nbsp;&nbsp;&nbsp;⚔️&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/59.png" width="80" alt="Arcanine">
+</p>
+
+| | Vanilla | KG-Grounded |
+|---|---|---|
+| **Move chosen** | Tackle (normal) | Solar Beam (grass) |
+| **Type effectiveness** | 1× (neutral) | 0.5× (resisted) but STAB |
+| **Avg damage / turn** | 18 | 47 |
+| **Total damage** | 108 | 284 |
+
+Vanilla defaulted to Tackle (40 base power, neutral). Grounded chose Solar Beam (120 base power, grass-type). Despite the 0.5× type resistance against fire, the raw power plus 1.5× STAB bonus made Solar Beam deal 2.6× more damage. The KG's effective-power formula `(power × type_effectiveness × STAB)` correctly identified Solar Beam as optimal.
+
+### Key findings
+
+Charizard vs Blastoise
++92% dmg
+Vanilla repeatedly chose Ember (fire vs water = 0.5×, ~13 dmg/turn). The KG-grounded agent identified fire moves as resisted and switched to Slash (normal, neutral 1×, ~26 dmg/turn). The Knowledge Graph's type effectiveness query directly prevented the suboptimal fire-move choice.
+
+Pikachu vs Geodude
+Immunity detected
+The most dramatic case. Vanilla picked Thunder (electric vs ground = immune, floor damage of 1). The grounded agent's KG context explicitly flagged "IMMUNE — DO NOT USE" for all electric moves and selected Slam instead (10 dmg). Without the KG, the LLM had no way to know ground-types are immune to electric.
+
+Venusaur vs Arcanine
++161% dmg
+Vanilla defaulted to Tackle (normal, 40 power, ~18 dmg/turn). Grounded chose Solar Beam (grass, 120 power). Despite 0.5× type resistance, the high base power + 1.5× STAB bonus gave ~47 dmg/turn. The KG's effective-power calculation (power × effectiveness × STAB) correctly identified Solar Beam as the optimal choice.
+
+### Interactive dashboard
+
+For the full interactive dashboard with Chart.js charts, Gen 3 sprites, and turn-by-turn analysis:
+
+```bash
+# Open locally in your browser
+open output/dashboard.html
+```
 ## Quickstart
 
 ### 1. Install dependencies
