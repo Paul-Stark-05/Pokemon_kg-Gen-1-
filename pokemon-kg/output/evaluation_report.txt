@@ -1,0 +1,32 @@
+======================================================================
+  POKÉMON KNOWLEDGE GRAPH — EVALUATION REPORT
+======================================================================
+
+── KG Extraction Quality (vs Gold Standard) ──
+  Precision:        0.0517
+  Recall:           1.0000
+  F1-score:         0.0984
+  True Positives:   141
+  False Positives:  2585
+  False Negatives:  0
+
+── Per-Relation Breakdown ──
+Relation                    Precision    Recall     F1    TP    FP    FN
+------------------------  -----------  --------  -----  ----  ----  ----
+accuracy                        0.000     0.000  0.000     0   117     0
+basepower                       0.161     1.000  0.277    14    73     0
+basestat_attack                 0.000     0.000  0.000     0   151     0
+basestat_defense                0.000     0.000  0.000     0   151     0
+basestat_hp                     0.000     0.000  0.000     0   151     0
+basestat_special_attack         0.000     0.000  0.000     0   151     0
+basestat_special_defense        0.000     0.000  0.000     0   151     0
+basestat_speed                  0.000     0.000  0.000     0   151     0
+damageclass                     0.000     0.000  0.000     0   147     0
+hasmovetype                     0.095     1.000  0.174    14   133     0
+hastype                         0.060     1.000  0.113    13   205     0
+immuneagainst                   0.333     1.000  0.500     2     4     0
+learnsmove                      0.066     1.000  0.123    67   954     0
+notveryeffectiveagainst         0.400     1.000  0.571    16    24     0
+supereffectiveagainst           0.405     1.000  0.577    15    22     0
+
+======================================================================

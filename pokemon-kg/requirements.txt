@@ -1,0 +1,23 @@
+# Core NLP & ML
+transformers>=4.36.0
+torch>=2.1.0
+sentencepiece>=0.1.99
+
+# Knowledge Graph
+rdflib>=7.0.0
+
+# Data fetching
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+
+# Visualisation
+networkx>=3.2
+matplotlib>=3.8.0
+pyvis>=0.3.2
+
+# Evaluation & utilities
+numpy>=1.25.0
+tabulate>=0.9.0
+
+# Optional: Anthropic API for higher-quality LLM battles
+# anthropic>=0.40.0

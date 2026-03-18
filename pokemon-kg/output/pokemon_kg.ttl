@@ -1,0 +1,3455 @@
+@prefix data: <http://pokemon-kg.example.org/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix poke: <http://pokemon-kg.example.org/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:abra a poke:Pokemon ;
+    poke:baseStat_attack 20 ;
+    poke:baseStat_defense 15 ;
+    poke:baseStat_hp 25 ;
+    poke:baseStat_special-attack 105 ;
+    poke:baseStat_special-defense 55 ;
+    poke:baseStat_speed 90 ;
+    poke:hasType data:psychic ;
+    poke:learnsMove data:teleport .
+
+data:aerodactyl a poke:Pokemon ;
+    poke:baseStat_attack 105 ;
+    poke:baseStat_defense 65 ;
+    poke:baseStat_hp 80 ;
+    poke:baseStat_special-attack 60 ;
+    poke:baseStat_special-defense 75 ;
+    poke:baseStat_speed 130 ;
+    poke:hasType data:flying,
+        data:rock ;
+    poke:learnsMove data:agility,
+        data:bite,
+        data:hyper_beam,
+        data:supersonic,
+        data:take_down,
+        data:wing_attack .
+
+data:alakazam a poke:Pokemon ;
+    poke:baseStat_attack 50 ;
+    poke:baseStat_defense 45 ;
+    poke:baseStat_hp 55 ;
+    poke:baseStat_special-attack 135 ;
+    poke:baseStat_special-defense 95 ;
+    poke:baseStat_speed 120 ;
+    poke:hasType data:psychic ;
+    poke:learnsMove data:confusion,
+        data:disable,
+        data:kinesis,
+        data:psybeam,
+        data:psychic,
+        data:recover,
+        data:reflect,
+        data:teleport .
+
+data:arbok a poke:Pokemon ;
+    poke:baseStat_attack 95 ;
+    poke:baseStat_defense 69 ;
+    poke:baseStat_hp 60 ;
+    poke:baseStat_special-attack 65 ;
+    poke:baseStat_special-defense 79 ;
+    poke:baseStat_speed 80 ;
+    poke:hasType data:poison ;
+    poke:learnsMove data:acid,
+        data:bite,
+        data:glare,
+        data:leer,
+        data:poison_sting,
+        data:screech,
+        data:wrap .
+
+data:arcanine a poke:Pokemon ;
+    poke:baseStat_attack 110 ;
+    poke:baseStat_defense 80 ;
+    poke:baseStat_hp 90 ;
+    poke:baseStat_special-attack 100 ;
+    poke:baseStat_special-defense 80 ;
+    poke:baseStat_speed 95 ;
+    poke:hasType data:fire ;
+    poke:learnsMove data:ember,
+        data:leer,
+        data:roar,
+        data:take_down .
+
+data:articuno a poke:Pokemon ;
+    poke:baseStat_attack 85 ;
+    poke:baseStat_defense 100 ;
+    poke:baseStat_hp 90 ;
+    poke:baseStat_special-attack 95 ;
+    poke:baseStat_special-defense 125 ;
+    poke:baseStat_speed 85 ;
+    poke:hasType data:flying,
+        data:ice ;
+    poke:learnsMove data:agility,
+        data:blizzard,
+        data:ice_beam,
+        data:mist,
+        data:peck .
+
+data:beedrill a poke:Pokemon ;
+    poke:baseStat_attack 90 ;
+    poke:baseStat_defense 40 ;
+    poke:baseStat_hp 65 ;
+    poke:baseStat_special-attack 45 ;
+    poke:baseStat_special-defense 80 ;
+    poke:baseStat_speed 75 ;
+    poke:hasType data:bug,
+        data:poison ;
+    poke:learnsMove data:agility,
+        data:focus_energy,
+        data:fury_attack,
+        data:pin_missile,
+        data:rage,
+        data:twineedle .
+
+data:bellsprout a poke:Pokemon ;
+    poke:baseStat_attack 75 ;
+    poke:baseStat_defense 35 ;
+    poke:baseStat_hp 50 ;
+    poke:baseStat_special-attack 70 ;
+    poke:baseStat_special-defense 30 ;
+    poke:baseStat_speed 40 ;
+    poke:hasType data:grass,
+        data:poison ;
+    poke:learnsMove data:acid,
+        data:growth,
+        data:poison_powder,
+        data:razor_leaf,
+        data:slam,
+        data:sleep_powder,
+        data:stun_spore,
+        data:vine_whip,
+        data:wrap .
+
+data:blastoise a poke:Pokemon ;
+    poke:baseStat_attack 83 ;
+    poke:baseStat_defense 100 ;
+    poke:baseStat_hp 79 ;
+    poke:baseStat_special-attack 85 ;
+    poke:baseStat_special-defense 105 ;
+    poke:baseStat_speed 78 ;
+    poke:hasType data:water ;
+    poke:learnsMove data:bite,
+        data:bubble,
+        data:hydro_pump,
+        data:skull_bash,
+        data:tackle,
+        data:tail_whip,
+        data:water_gun,
+        data:withdraw .
+
+data:bulbasaur a poke:Pokemon ;
+    poke:baseStat_attack 49 ;
+    poke:baseStat_defense 49 ;
+    poke:baseStat_hp 45 ;
+    poke:baseStat_special-attack 65 ;
+    poke:baseStat_special-defense 65 ;
+    poke:baseStat_speed 45 ;
+    poke:hasType data:grass,
+        data:poison ;
+    poke:learnsMove data:growl,
+        data:growth,
+        data:leech_seed,
+        data:poison_powder,
+        data:razor_leaf,
+        data:sleep_powder,
+        data:solar_beam,
+        data:tackle,
+        data:vine_whip .
+
+data:butterfree a poke:Pokemon ;
+    poke:baseStat_attack 45 ;
+    poke:baseStat_defense 50 ;
+    poke:baseStat_hp 60 ;
+    poke:baseStat_special-attack 90 ;
+    poke:baseStat_special-defense 80 ;
+    poke:baseStat_speed 70 ;
+    poke:hasType data:bug,
+        data:flying ;
+    poke:learnsMove data:confusion,
+        data:gust,
+        data:poison_powder,
+        data:psybeam,
+        data:sleep_powder,
+        data:stun_spore,
+        data:supersonic,
+        data:whirlwind .
+
+data:caterpie a poke:Pokemon ;
+    poke:baseStat_attack 30 ;
+    poke:baseStat_defense 35 ;
+    poke:baseStat_hp 45 ;
+    poke:baseStat_special-attack 20 ;
+    poke:baseStat_special-defense 20 ;
+    poke:baseStat_speed 45 ;
+    poke:hasType data:bug ;
+    poke:learnsMove data:string_shot,
+        data:tackle .
+
+data:chansey a poke:Pokemon ;
+    poke:baseStat_attack 5 ;
+    poke:baseStat_defense 5 ;
+    poke:baseStat_hp 250 ;
+    poke:baseStat_special-attack 35 ;
+    poke:baseStat_special-defense 105 ;
+    poke:baseStat_speed 50 ;
+    poke:hasType data:normal ;
+    poke:learnsMove data:defense_curl,
+        data:double_edge,
+        data:double_slap,
+        data:growl,
+        data:light_screen,
+        data:minimize,
+        data:pound,
+        data:sing,
+        data:tail_whip .
+
+data:charizard a poke:Pokemon ;
+    poke:baseStat_attack 84 ;
+    poke:baseStat_defense 78 ;
+    poke:baseStat_hp 78 ;
+    poke:baseStat_special-attack 109 ;
+    poke:baseStat_special-defense 85 ;
+    poke:baseStat_speed 100 ;
+    poke:hasType data:fire,
+        data:flying ;
+    poke:learnsMove data:ember,
+        data:fire_spin,
+        data:flamethrower,
+        data:growl,
+        data:leer,
+        data:rage,
+        data:scratch,
+        data:slash .
+
+data:charmander a poke:Pokemon ;
+    poke:baseStat_attack 52 ;
+    poke:baseStat_defense 43 ;
+    poke:baseStat_hp 39 ;
+    poke:baseStat_special-attack 60 ;
+    poke:baseStat_special-defense 50 ;
+    poke:baseStat_speed 65 ;
+    poke:hasType data:fire ;
+    poke:learnsMove data:ember,
+        data:fire_spin,
+        data:flamethrower,
+        data:growl,
+        data:leer,
+        data:rage,
+        data:scratch,
+        data:slash .
+
+data:charmeleon a poke:Pokemon ;
+    poke:baseStat_attack 64 ;
+    poke:baseStat_defense 58 ;
+    poke:baseStat_hp 58 ;
+    poke:baseStat_special-attack 80 ;
+    poke:baseStat_special-defense 65 ;
+    poke:baseStat_speed 80 ;
+    poke:hasType data:fire ;
+    poke:learnsMove data:ember,
+        data:fire_spin,
+        data:flamethrower,
+        data:growl,
+        data:leer,
+        data:rage,
+        data:scratch,
+        data:slash .
+
+data:clefable a poke:Pokemon ;
+    poke:baseStat_attack 70 ;
+    poke:baseStat_defense 73 ;
+    poke:baseStat_hp 95 ;
+    poke:baseStat_special-attack 95 ;
+    poke:baseStat_special-defense 90 ;
+    poke:baseStat_speed 60 ;
+    poke:hasType data:fairy ;
+    poke:learnsMove data:double_slap,
+        data:metronome,
+        data:minimize,
+        data:sing .
+
+data:clefairy a poke:Pokemon ;
+    poke:baseStat_attack 45 ;
+    poke:baseStat_defense 48 ;
+    poke:baseStat_hp 70 ;
+    poke:baseStat_special-attack 60 ;
+    poke:baseStat_special-defense 65 ;
+    poke:baseStat_speed 35 ;
+    poke:hasType data:fairy ;
+    poke:learnsMove data:defense_curl,
+        data:double_slap,
+        data:growl,
+        data:light_screen,
+        data:metronome,
+        data:minimize,
+        data:pound,
+        data:sing .
+
+data:cloyster a poke:Pokemon ;
+    poke:baseStat_attack 95 ;
+    poke:baseStat_defense 180 ;
+    poke:baseStat_hp 50 ;
+    poke:baseStat_special-attack 85 ;
+    poke:baseStat_special-defense 45 ;
+    poke:baseStat_speed 70 ;
+    poke:hasType data:ice,
+        data:water ;
+    poke:learnsMove data:aurora_beam,
+        data:clamp,
+        data:spike_cannon,
+        data:supersonic,
+        data:withdraw .
+
+data:cubone a poke:Pokemon ;
+    poke:baseStat_attack 50 ;
+    poke:baseStat_defense 95 ;
+    poke:baseStat_hp 50 ;
+    poke:baseStat_special-attack 40 ;
+    poke:baseStat_special-defense 50 ;
+    poke:baseStat_speed 35 ;
+    poke:hasType data:ground ;
+    poke:learnsMove data:bone_club,
+        data:bonemerang,
+        data:focus_energy,
+        data:growl,
+        data:headbutt,
+        data:leer,
+        data:rage,
+        data:tail_whip,
+        data:thrash .
+
+data:dewgong a poke:Pokemon ;
+    poke:baseStat_attack 70 ;
+    poke:baseStat_defense 80 ;
+    poke:baseStat_hp 90 ;
+    poke:baseStat_special-attack 70 ;
+    poke:baseStat_special-defense 95 ;
+    poke:baseStat_speed 70 ;
+    poke:hasType data:ice,
+        data:water ;
+    poke:learnsMove data:aurora_beam,
+        data:growl,
+        data:headbutt,
+        data:ice_beam,
+        data:rest,
+        data:take_down .
+
+data:diglett a poke:Pokemon ;
+    poke:baseStat_attack 55 ;
+    poke:baseStat_defense 25 ;
+    poke:baseStat_hp 10 ;
+    poke:baseStat_special-attack 35 ;
+    poke:baseStat_special-defense 45 ;
+    poke:baseStat_speed 95 ;
+    poke:hasType data:ground ;
+    poke:learnsMove data:dig,
+        data:earthquake,
+        data:growl,
+        data:sand_attack,
+        data:scratch,
+        data:slash .
+
+data:ditto a poke:Pokemon ;
+    poke:baseStat_attack 48 ;
+    poke:baseStat_defense 48 ;
+    poke:baseStat_hp 48 ;
+    poke:baseStat_special-attack 48 ;
+    poke:baseStat_special-defense 48 ;
+    poke:baseStat_speed 48 ;
+    poke:hasType data:normal ;
+    poke:learnsMove data:transform .
+
+data:dodrio a poke:Pokemon ;
+    poke:baseStat_attack 110 ;
+    poke:baseStat_defense 70 ;
+    poke:baseStat_hp 60 ;
+    poke:baseStat_special-attack 60 ;
+    poke:baseStat_special-defense 60 ;
+    poke:baseStat_speed 110 ;
+    poke:hasType data:flying,
+        data:normal ;
+    poke:learnsMove data:agility,
+        data:drill_peck,
+        data:fury_attack,
+        data:growl,
+        data:peck,
+        data:rage,
+        data:tri_attack .
+
+data:doduo a poke:Pokemon ;
+    poke:baseStat_attack 85 ;
+    poke:baseStat_defense 45 ;
+    poke:baseStat_hp 35 ;
+    poke:baseStat_special-attack 35 ;
+    poke:baseStat_special-defense 35 ;
+    poke:baseStat_speed 75 ;
+    poke:hasType data:flying,
+        data:normal ;
+    poke:learnsMove data:agility,
+        data:drill_peck,
+        data:fury_attack,
+        data:growl,
+        data:peck,
+        data:rage,
+        data:tri_attack .
+
+data:dragonair a poke:Pokemon ;
+    poke:baseStat_attack 84 ;
+    poke:baseStat_defense 65 ;
+    poke:baseStat_hp 61 ;
+    poke:baseStat_special-attack 70 ;
+    poke:baseStat_special-defense 70 ;
+    poke:baseStat_speed 70 ;
+    poke:hasType data:dragon ;
+    poke:learnsMove data:agility,
+        data:dragon_rage,
+        data:hyper_beam,
+        data:leer,
+        data:slam,
+        data:thunder_wave,
+        data:wrap .
+
+data:dragonite a poke:Pokemon ;
+    poke:baseStat_attack 134 ;
+    poke:baseStat_defense 95 ;
+    poke:baseStat_hp 91 ;
+    poke:baseStat_special-attack 100 ;
+    poke:baseStat_special-defense 100 ;
+    poke:baseStat_speed 80 ;
+    poke:hasType data:dragon,
+        data:flying ;
+    poke:learnsMove data:agility,
+        data:dragon_rage,
+        data:hyper_beam,
+        data:leer,
+        data:slam,
+        data:thunder_wave,
+        data:wrap .
+
+data:dratini a poke:Pokemon ;
+    poke:baseStat_attack 64 ;
+    poke:baseStat_defense 45 ;
+    poke:baseStat_hp 41 ;
+    poke:baseStat_special-attack 50 ;
+    poke:baseStat_special-defense 50 ;
+    poke:baseStat_speed 50 ;
+    poke:hasType data:dragon ;
+    poke:learnsMove data:agility,
+        data:dragon_rage,
+        data:hyper_beam,
+        data:leer,
+        data:slam,
+        data:thunder_wave,
+        data:wrap .
+
+data:drowzee a poke:Pokemon ;
+    poke:baseStat_attack 48 ;
+    poke:baseStat_defense 45 ;
+    poke:baseStat_hp 60 ;
+    poke:baseStat_special-attack 43 ;
+    poke:baseStat_special-defense 90 ;
+    poke:baseStat_speed 42 ;
+    poke:hasType data:psychic ;
+    poke:learnsMove data:confusion,
+        data:disable,
+        data:headbutt,
+        data:hypnosis,
+        data:meditate,
+        data:poison_gas,
+        data:pound,
+        data:psychic .
+
+data:dugtrio a poke:Pokemon ;
+    poke:baseStat_attack 100 ;
+    poke:baseStat_defense 50 ;
+    poke:baseStat_hp 35 ;
+    poke:baseStat_special-attack 50 ;
+    poke:baseStat_special-defense 70 ;
+    poke:baseStat_speed 120 ;
+    poke:hasType data:ground ;
+    poke:learnsMove data:dig,
+        data:earthquake,
+        data:growl,
+        data:sand_attack,
+        data:scratch,
+        data:slash .
+
+data:eevee a poke:Pokemon ;
+    poke:baseStat_attack 55 ;
+    poke:baseStat_defense 50 ;
+    poke:baseStat_hp 55 ;
+    poke:baseStat_special-attack 45 ;
+    poke:baseStat_special-defense 65 ;
+    poke:baseStat_speed 55 ;
+    poke:hasType data:normal ;
+    poke:learnsMove data:bite,
+        data:focus_energy,
+        data:growl,
+        data:quick_attack,
+        data:sand_attack,
+        data:tackle,
+        data:tail_whip,
+        data:take_down .
+
+data:ekans a poke:Pokemon ;
+    poke:baseStat_attack 60 ;
+    poke:baseStat_defense 44 ;
+    poke:baseStat_hp 35 ;
+    poke:baseStat_special-attack 40 ;
+    poke:baseStat_special-defense 54 ;
+    poke:baseStat_speed 55 ;
+    poke:hasType data:poison ;
+    poke:learnsMove data:acid,
+        data:bite,
+        data:glare,
+        data:leer,
+        data:poison_sting,
+        data:screech,
+        data:wrap .
+
+data:electabuzz a poke:Pokemon ;
+    poke:baseStat_attack 83 ;
+    poke:baseStat_defense 57 ;
+    poke:baseStat_hp 65 ;
+    poke:baseStat_special-attack 95 ;
+    poke:baseStat_special-defense 85 ;
+    poke:baseStat_speed 105 ;
+    poke:hasType data:electric ;
+    poke:learnsMove data:leer,
+        data:light_screen,
+        data:quick_attack,
+        data:screech,
+        data:thunder,
+        data:thunder_punch,
+        data:thunder_shock .
+
+data:electrode a poke:Pokemon ;
+    poke:baseStat_attack 50 ;
+    poke:baseStat_defense 70 ;
+    poke:baseStat_hp 60 ;
+    poke:baseStat_special-attack 80 ;
+    poke:baseStat_special-defense 80 ;
+    poke:baseStat_speed 150 ;
+    poke:hasType data:electric ;
+    poke:learnsMove data:explosion,
+        data:light_screen,
+        data:screech,
+        data:self_destruct,
+        data:sonic_boom,
+        data:swift,
+        data:tackle .
+
+data:exeggcute a poke:Pokemon ;
+    poke:baseStat_attack 40 ;
+    poke:baseStat_defense 80 ;
+    poke:baseStat_hp 60 ;
+    poke:baseStat_special-attack 60 ;
+    poke:baseStat_special-defense 45 ;
+    poke:baseStat_speed 40 ;
+    poke:hasType data:grass,
+        data:psychic ;
+    poke:learnsMove data:barrage,
+        data:hypnosis,
+        data:leech_seed,
+        data:poison_powder,
+        data:reflect,
+        data:sleep_powder,
+        data:solar_beam,
+        data:stun_spore .
+
+data:exeggutor a poke:Pokemon ;
+    poke:baseStat_attack 95 ;
+    poke:baseStat_defense 85 ;
+    poke:baseStat_hp 95 ;
+    poke:baseStat_special-attack 125 ;
+    poke:baseStat_special-defense 75 ;
+    poke:baseStat_speed 55 ;
+    poke:hasType data:grass,
+        data:psychic ;
+    poke:learnsMove data:barrage,
+        data:hypnosis,
+        data:stomp .
+
+data:farfetchd a poke:Pokemon ;
+    poke:baseStat_attack 90 ;
+    poke:baseStat_defense 55 ;
+    poke:baseStat_hp 52 ;
+    poke:baseStat_special-attack 58 ;
+    poke:baseStat_special-defense 62 ;
+    poke:baseStat_speed 60 ;
+    poke:hasType data:flying,
+        data:normal ;
+    poke:learnsMove data:agility,
+        data:fury_attack,
+        data:leer,
+        data:peck,
+        data:sand_attack,
+        data:slash,
+        data:swords_dance .
+
+data:fearow a poke:Pokemon ;
+    poke:baseStat_attack 90 ;
+    poke:baseStat_defense 65 ;
+    poke:baseStat_hp 65 ;
+    poke:baseStat_special-attack 61 ;
+    poke:baseStat_special-defense 61 ;
+    poke:baseStat_speed 100 ;
+    poke:hasType data:flying,
+        data:normal ;
+    poke:learnsMove data:agility,
+        data:drill_peck,
+        data:fury_attack,
+        data:growl,
+        data:leer,
+        data:mirror_move,
+        data:peck .
+
+data:flareon a poke:Pokemon ;
+    poke:baseStat_attack 130 ;
+    poke:baseStat_defense 60 ;
+    poke:baseStat_hp 65 ;
+    poke:baseStat_special-attack 95 ;
+    poke:baseStat_special-defense 110 ;
+    poke:baseStat_speed 65 ;
+    poke:hasType data:fire ;
+    poke:learnsMove data:bite,
+        data:ember,
+        data:fire_spin,
+        data:flamethrower,
+        data:leer,
+        data:quick_attack,
+        data:rage,
+        data:sand_attack,
+        data:smog,
+        data:tackle,
+        data:tail_whip .
+
+data:gastly a poke:Pokemon ;
+    poke:baseStat_attack 35 ;
+    poke:baseStat_defense 30 ;
+    poke:baseStat_hp 30 ;
+    poke:baseStat_special-attack 100 ;
+    poke:baseStat_special-defense 35 ;
+    poke:baseStat_speed 80 ;
+    poke:hasType data:ghost,
+        data:poison ;
+    poke:learnsMove data:confuse_ray,
+        data:dream_eater,
+        data:hypnosis,
+        data:lick,
+        data:night_shade .
+
+data:gengar a poke:Pokemon ;
+    poke:baseStat_attack 65 ;
+    poke:baseStat_defense 60 ;
+    poke:baseStat_hp 60 ;
+    poke:baseStat_special-attack 130 ;
+    poke:baseStat_special-defense 75 ;
+    poke:baseStat_speed 110 ;
+    poke:hasType data:ghost,
+        data:poison ;
+    poke:learnsMove data:confuse_ray,
+        data:dream_eater,
+        data:hypnosis,
+        data:lick,
+        data:night_shade .
+
+data:geodude a poke:Pokemon ;
+    poke:baseStat_attack 80 ;
+    poke:baseStat_defense 100 ;
+    poke:baseStat_hp 40 ;
+    poke:baseStat_special-attack 30 ;
+    poke:baseStat_special-defense 30 ;
+    poke:baseStat_speed 20 ;
+    poke:hasType data:ground,
+        data:rock ;
+    poke:learnsMove data:defense_curl,
+        data:earthquake,
+        data:explosion,
+        data:harden,
+        data:rock_throw,
+        data:self_destruct,
+        data:tackle .
+
+data:gloom a poke:Pokemon ;
+    poke:baseStat_attack 65 ;
+    poke:baseStat_defense 70 ;
+    poke:baseStat_hp 60 ;
+    poke:baseStat_special-attack 85 ;
+    poke:baseStat_special-defense 75 ;
+    poke:baseStat_speed 40 ;
+    poke:hasType data:grass,
+        data:poison ;
+    poke:learnsMove data:absorb,
+        data:acid,
+        data:petal_dance,
+        data:poison_powder,
+        data:sleep_powder,
+        data:solar_beam,
+        data:stun_spore .
+
+data:golbat a poke:Pokemon ;
+    poke:baseStat_attack 80 ;
+    poke:baseStat_defense 70 ;
+    poke:baseStat_hp 75 ;
+    poke:baseStat_special-attack 65 ;
+    poke:baseStat_special-defense 75 ;
+    poke:baseStat_speed 90 ;
+    poke:hasType data:flying,
+        data:poison ;
+    poke:learnsMove data:bite,
+        data:confuse_ray,
+        data:haze,
+        data:leech_life,
+        data:screech,
+        data:supersonic,
+        data:wing_attack .
+
+data:goldeen a poke:Pokemon ;
+    poke:baseStat_attack 67 ;
+    poke:baseStat_defense 60 ;
+    poke:baseStat_hp 45 ;
+    poke:baseStat_special-attack 35 ;
+    poke:baseStat_special-defense 50 ;
+    poke:baseStat_speed 63 ;
+    poke:hasType data:water ;
+    poke:learnsMove data:agility,
+        data:fury_attack,
+        data:horn_attack,
+        data:horn_drill,
+        data:peck,
+        data:supersonic,
+        data:tail_whip,
+        data:waterfall .
+
+data:golduck a poke:Pokemon ;
+    poke:baseStat_attack 82 ;
+    poke:baseStat_defense 78 ;
+    poke:baseStat_hp 80 ;
+    poke:baseStat_special-attack 95 ;
+    poke:baseStat_special-defense 80 ;
+    poke:baseStat_speed 85 ;
+    poke:hasType data:water ;
+    poke:learnsMove data:confusion,
+        data:disable,
+        data:fury_swipes,
+        data:hydro_pump,
+        data:scratch,
+        data:tail_whip .
+
+data:golem a poke:Pokemon ;
+    poke:baseStat_attack 120 ;
+    poke:baseStat_defense 130 ;
+    poke:baseStat_hp 80 ;
+    poke:baseStat_special-attack 55 ;
+    poke:baseStat_special-defense 65 ;
+    poke:baseStat_speed 45 ;
+    poke:hasType data:ground,
+        data:rock ;
+    poke:learnsMove data:defense_curl,
+        data:earthquake,
+        data:explosion,
+        data:harden,
+        data:rock_throw,
+        data:self_destruct,
+        data:tackle .
+
+data:graveler a poke:Pokemon ;
+    poke:baseStat_attack 95 ;
+    poke:baseStat_defense 115 ;
+    poke:baseStat_hp 55 ;
+    poke:baseStat_special-attack 45 ;
+    poke:baseStat_special-defense 45 ;
+    poke:baseStat_speed 35 ;
+    poke:hasType data:ground,
+        data:rock ;
+    poke:learnsMove data:defense_curl,
+        data:earthquake,
+        data:explosion,
+        data:harden,
+        data:rock_throw,
+        data:self_destruct,
+        data:tackle .
+
+data:grimer a poke:Pokemon ;
+    poke:baseStat_attack 80 ;
+    poke:baseStat_defense 50 ;
+    poke:baseStat_hp 80 ;
+    poke:baseStat_special-attack 40 ;
+    poke:baseStat_special-defense 50 ;
+    poke:baseStat_speed 25 ;
+    poke:hasType data:poison ;
+    poke:learnsMove data:acid_armor,
+        data:disable,
+        data:harden,
+        data:minimize,
+        data:poison_gas,
+        data:pound,
+        data:screech,
+        data:sludge .
+
+data:growlithe a poke:Pokemon ;
+    poke:baseStat_attack 70 ;
+    poke:baseStat_defense 45 ;
+    poke:baseStat_hp 55 ;
+    poke:baseStat_special-attack 70 ;
+    poke:baseStat_special-defense 50 ;
+    poke:baseStat_speed 60 ;
+    poke:hasType data:fire ;
+    poke:learnsMove data:agility,
+        data:bite,
+        data:ember,
+        data:flamethrower,
+        data:leer,
+        data:roar,
+        data:take_down .
+
+data:gyarados a poke:Pokemon ;
+    poke:baseStat_attack 125 ;
+    poke:baseStat_defense 79 ;
+    poke:baseStat_hp 95 ;
+    poke:baseStat_special-attack 60 ;
+    poke:baseStat_special-defense 100 ;
+    poke:baseStat_speed 81 ;
+    poke:hasType data:flying,
+        data:water ;
+    poke:learnsMove data:bite,
+        data:dragon_rage,
+        data:hydro_pump,
+        data:hyper_beam,
+        data:leer,
+        data:tackle .
+
+data:haunter a poke:Pokemon ;
+    poke:baseStat_attack 50 ;
+    poke:baseStat_defense 45 ;
+    poke:baseStat_hp 45 ;
+    poke:baseStat_special-attack 115 ;
+    poke:baseStat_special-defense 55 ;
+    poke:baseStat_speed 95 ;
+    poke:hasType data:ghost,
+        data:poison ;
+    poke:learnsMove data:confuse_ray,
+        data:dream_eater,
+        data:hypnosis,
+        data:lick,
+        data:night_shade .
+
+data:hitmonchan a poke:Pokemon ;
+    poke:baseStat_attack 105 ;
+    poke:baseStat_defense 79 ;
+    poke:baseStat_hp 50 ;
+    poke:baseStat_special-attack 35 ;
+    poke:baseStat_special-defense 110 ;
+    poke:baseStat_speed 76 ;
+    poke:hasType data:fighting ;
+    poke:learnsMove data:agility,
+        data:comet_punch,
+        data:counter,
+        data:fire_punch,
+        data:ice_punch,
+        data:mega_punch,
+        data:thunder_punch .
+
+data:hitmonlee a poke:Pokemon ;
+    poke:baseStat_attack 120 ;
+    poke:baseStat_defense 53 ;
+    poke:baseStat_hp 50 ;
+    poke:baseStat_special-attack 35 ;
+    poke:baseStat_special-defense 110 ;
+    poke:baseStat_speed 87 ;
+    poke:hasType data:fighting ;
+    poke:learnsMove data:double_kick,
+        data:focus_energy,
+        data:high_jump_kick,
+        data:jump_kick,
+        data:meditate,
+        data:mega_kick,
+        data:rolling_kick .
+
+data:horsea a poke:Pokemon ;
+    poke:baseStat_attack 40 ;
+    poke:baseStat_defense 70 ;
+    poke:baseStat_hp 30 ;
+    poke:baseStat_special-attack 70 ;
+    poke:baseStat_special-defense 25 ;
+    poke:baseStat_speed 60 ;
+    poke:hasType data:water ;
+    poke:learnsMove data:agility,
+        data:bubble,
+        data:hydro_pump,
+        data:leer,
+        data:smokescreen,
+        data:water_gun .
+
+data:hypno a poke:Pokemon ;
+    poke:baseStat_attack 73 ;
+    poke:baseStat_defense 70 ;
+    poke:baseStat_hp 85 ;
+    poke:baseStat_special-attack 73 ;
+    poke:baseStat_special-defense 115 ;
+    poke:baseStat_speed 67 ;
+    poke:hasType data:psychic ;
+    poke:learnsMove data:confusion,
+        data:disable,
+        data:headbutt,
+        data:hypnosis,
+        data:meditate,
+        data:poison_gas,
+        data:pound,
+        data:psychic .
+
+data:ivysaur a poke:Pokemon ;
+    poke:baseStat_attack 62 ;
+    poke:baseStat_defense 63 ;
+    poke:baseStat_hp 60 ;
+    poke:baseStat_special-attack 80 ;
+    poke:baseStat_special-defense 80 ;
+    poke:baseStat_speed 60 ;
+    poke:hasType data:grass,
+        data:poison ;
+    poke:learnsMove data:growl,
+        data:growth,
+        data:leech_seed,
+        data:poison_powder,
+        data:razor_leaf,
+        data:sleep_powder,
+        data:solar_beam,
+        data:tackle,
+        data:vine_whip .
+
+data:jigglypuff a poke:Pokemon ;
+    poke:baseStat_attack 45 ;
+    poke:baseStat_defense 20 ;
+    poke:baseStat_hp 115 ;
+    poke:baseStat_special-attack 45 ;
+    poke:baseStat_special-defense 25 ;
+    poke:baseStat_speed 20 ;
+    poke:hasType data:fairy,
+        data:normal ;
+    poke:learnsMove data:body_slam,
+        data:defense_curl,
+        data:disable,
+        data:double_edge,
+        data:double_slap,
+        data:pound,
+        data:rest,
+        data:sing .
+
+data:jolteon a poke:Pokemon ;
+    poke:baseStat_attack 65 ;
+    poke:baseStat_defense 60 ;
+    poke:baseStat_hp 65 ;
+    poke:baseStat_special-attack 110 ;
+    poke:baseStat_special-defense 95 ;
+    poke:baseStat_speed 130 ;
+    poke:hasType data:electric ;
+    poke:learnsMove data:agility,
+        data:double_kick,
+        data:pin_missile,
+        data:quick_attack,
+        data:sand_attack,
+        data:tackle,
+        data:tail_whip,
+        data:thunder,
+        data:thunder_shock,
+        data:thunder_wave .
+
+data:jynx a poke:Pokemon ;
+    poke:baseStat_attack 50 ;
+    poke:baseStat_defense 35 ;
+    poke:baseStat_hp 65 ;
+    poke:baseStat_special-attack 115 ;
+    poke:baseStat_special-defense 95 ;
+    poke:baseStat_speed 95 ;
+    poke:hasType data:ice,
+        data:psychic ;
+    poke:learnsMove data:blizzard,
+        data:body_slam,
+        data:double_slap,
+        data:ice_punch,
+        data:lick,
+        data:lovely_kiss,
+        data:pound,
+        data:thrash .
+
+data:kabuto a poke:Pokemon ;
+    poke:baseStat_attack 80 ;
+    poke:baseStat_defense 90 ;
+    poke:baseStat_hp 30 ;
+    poke:baseStat_special-attack 55 ;
+    poke:baseStat_special-defense 45 ;
+    poke:baseStat_speed 55 ;
+    poke:hasType data:rock,
+        data:water ;
+    poke:learnsMove data:absorb,
+        data:harden,
+        data:hydro_pump,
+        data:leer,
+        data:scratch,
+        data:slash .
+
+data:kabutops a poke:Pokemon ;
+    poke:baseStat_attack 115 ;
+    poke:baseStat_defense 105 ;
+    poke:baseStat_hp 60 ;
+    poke:baseStat_special-attack 65 ;
+    poke:baseStat_special-defense 70 ;
+    poke:baseStat_speed 80 ;
+    poke:hasType data:rock,
+        data:water ;
+    poke:learnsMove data:absorb,
+        data:harden,
+        data:hydro_pump,
+        data:leer,
+        data:scratch,
+        data:slash .
+
+data:kadabra a poke:Pokemon ;
+    poke:baseStat_attack 35 ;
+    poke:baseStat_defense 30 ;
+    poke:baseStat_hp 40 ;
+    poke:baseStat_special-attack 120 ;
+    poke:baseStat_special-defense 70 ;
+    poke:baseStat_speed 105 ;
+    poke:hasType data:psychic ;
+    poke:learnsMove data:confusion,
+        data:disable,
+        data:kinesis,
+        data:psybeam,
+        data:psychic,
+        data:recover,
+        data:reflect,
+        data:teleport .
+
+data:kakuna a poke:Pokemon ;
+    poke:baseStat_attack 25 ;
+    poke:baseStat_defense 50 ;
+    poke:baseStat_hp 45 ;
+    poke:baseStat_special-attack 25 ;
+    poke:baseStat_special-defense 25 ;
+    poke:baseStat_speed 35 ;
+    poke:hasType data:bug,
+        data:poison ;
+    poke:learnsMove data:harden .
+
+data:kangaskhan a poke:Pokemon ;
+    poke:baseStat_attack 95 ;
+    poke:baseStat_defense 80 ;
+    poke:baseStat_hp 105 ;
+    poke:baseStat_special-attack 40 ;
+    poke:baseStat_special-defense 80 ;
+    poke:baseStat_speed 90 ;
+    poke:hasType data:normal ;
+    poke:learnsMove data:bite,
+        data:comet_punch,
+        data:dizzy_punch,
+        data:leer,
+        data:mega_punch,
+        data:rage,
+        data:tail_whip .
+
+data:kingler a poke:Pokemon ;
+    poke:baseStat_attack 130 ;
+    poke:baseStat_defense 115 ;
+    poke:baseStat_hp 55 ;
+    poke:baseStat_special-attack 50 ;
+    poke:baseStat_special-defense 50 ;
+    poke:baseStat_speed 75 ;
+    poke:hasType data:water ;
+    poke:learnsMove data:bubble,
+        data:crabhammer,
+        data:guillotine,
+        data:harden,
+        data:leer,
+        data:stomp,
+        data:vice_grip .
+
+data:koffing a poke:Pokemon ;
+    poke:baseStat_attack 65 ;
+    poke:baseStat_defense 95 ;
+    poke:baseStat_hp 40 ;
+    poke:baseStat_special-attack 60 ;
+    poke:baseStat_special-defense 45 ;
+    poke:baseStat_speed 35 ;
+    poke:hasType data:poison ;
+    poke:learnsMove data:explosion,
+        data:haze,
+        data:self_destruct,
+        data:sludge,
+        data:smog,
+        data:smokescreen,
+        data:tackle .
+
+data:krabby a poke:Pokemon ;
+    poke:baseStat_attack 105 ;
+    poke:baseStat_defense 90 ;
+    poke:baseStat_hp 30 ;
+    poke:baseStat_special-attack 25 ;
+    poke:baseStat_special-defense 25 ;
+    poke:baseStat_speed 50 ;
+    poke:hasType data:water ;
+    poke:learnsMove data:bubble,
+        data:crabhammer,
+        data:guillotine,
+        data:harden,
+        data:leer,
+        data:stomp,
+        data:vice_grip .
+
+data:lapras a poke:Pokemon ;
+    poke:baseStat_attack 85 ;
+    poke:baseStat_defense 80 ;
+    poke:baseStat_hp 130 ;
+    poke:baseStat_special-attack 85 ;
+    poke:baseStat_special-defense 95 ;
+    poke:baseStat_speed 60 ;
+    poke:hasType data:ice,
+        data:water ;
+    poke:learnsMove data:body_slam,
+        data:confuse_ray,
+        data:growl,
+        data:hydro_pump,
+        data:ice_beam,
+        data:mist,
+        data:sing,
+        data:water_gun .
+
+data:lickitung a poke:Pokemon ;
+    poke:baseStat_attack 55 ;
+    poke:baseStat_defense 75 ;
+    poke:baseStat_hp 90 ;
+    poke:baseStat_special-attack 60 ;
+    poke:baseStat_special-defense 75 ;
+    poke:baseStat_speed 30 ;
+    poke:hasType data:normal ;
+    poke:learnsMove data:defense_curl,
+        data:disable,
+        data:screech,
+        data:slam,
+        data:stomp,
+        data:supersonic,
+        data:wrap .
+
+data:machamp a poke:Pokemon ;
+    poke:baseStat_attack 130 ;
+    poke:baseStat_defense 80 ;
+    poke:baseStat_hp 90 ;
+    poke:baseStat_special-attack 65 ;
+    poke:baseStat_special-defense 85 ;
+    poke:baseStat_speed 55 ;
+    poke:hasType data:fighting ;
+    poke:learnsMove data:focus_energy,
+        data:karate_chop,
+        data:leer,
+        data:low_kick,
+        data:seismic_toss,
+        data:submission .
+
+data:machoke a poke:Pokemon ;
+    poke:baseStat_attack 100 ;
+    poke:baseStat_defense 70 ;
+    poke:baseStat_hp 80 ;
+    poke:baseStat_special-attack 50 ;
+    poke:baseStat_special-defense 60 ;
+    poke:baseStat_speed 45 ;
+    poke:hasType data:fighting ;
+    poke:learnsMove data:focus_energy,
+        data:karate_chop,
+        data:leer,
+        data:low_kick,
+        data:seismic_toss,
+        data:submission .
+
+data:machop a poke:Pokemon ;
+    poke:baseStat_attack 80 ;
+    poke:baseStat_defense 50 ;
+    poke:baseStat_hp 70 ;
+    poke:baseStat_special-attack 35 ;
+    poke:baseStat_special-defense 35 ;
+    poke:baseStat_speed 35 ;
+    poke:hasType data:fighting ;
+    poke:learnsMove data:focus_energy,
+        data:karate_chop,
+        data:leer,
+        data:low_kick,
+        data:seismic_toss,
+        data:submission .
+
+data:magikarp a poke:Pokemon ;
+    poke:baseStat_attack 10 ;
+    poke:baseStat_defense 55 ;
+    poke:baseStat_hp 20 ;
+    poke:baseStat_special-attack 15 ;
+    poke:baseStat_special-defense 20 ;
+    poke:baseStat_speed 80 ;
+    poke:hasType data:water ;
+    poke:learnsMove data:splash,
+        data:tackle .
+
+data:magmar a poke:Pokemon ;
+    poke:baseStat_attack 95 ;
+    poke:baseStat_defense 57 ;
+    poke:baseStat_hp 65 ;
+    poke:baseStat_special-attack 100 ;
+    poke:baseStat_special-defense 85 ;
+    poke:baseStat_speed 93 ;
+    poke:hasType data:fire ;
+    poke:learnsMove data:confuse_ray,
+        data:ember,
+        data:fire_punch,
+        data:flamethrower,
+        data:leer,
+        data:smog,
+        data:smokescreen .
+
+data:magnemite a poke:Pokemon ;
+    poke:baseStat_attack 35 ;
+    poke:baseStat_defense 70 ;
+    poke:baseStat_hp 25 ;
+    poke:baseStat_special-attack 95 ;
+    poke:baseStat_special-defense 55 ;
+    poke:baseStat_speed 45 ;
+    poke:hasType data:electric,
+        data:steel ;
+    poke:learnsMove data:screech,
+        data:sonic_boom,
+        data:supersonic,
+        data:swift,
+        data:tackle,
+        data:thunder_shock,
+        data:thunder_wave .
+
+data:magneton a poke:Pokemon ;
+    poke:baseStat_attack 60 ;
+    poke:baseStat_defense 95 ;
+    poke:baseStat_hp 50 ;
+    poke:baseStat_special-attack 120 ;
+    poke:baseStat_special-defense 70 ;
+    poke:baseStat_speed 70 ;
+    poke:hasType data:electric,
+        data:steel ;
+    poke:learnsMove data:screech,
+        data:sonic_boom,
+        data:supersonic,
+        data:swift,
+        data:tackle,
+        data:thunder_shock,
+        data:thunder_wave .
+
+data:mankey a poke:Pokemon ;
+    poke:baseStat_attack 80 ;
+    poke:baseStat_defense 35 ;
+    poke:baseStat_hp 40 ;
+    poke:baseStat_special-attack 35 ;
+    poke:baseStat_special-defense 45 ;
+    poke:baseStat_speed 70 ;
+    poke:hasType data:fighting ;
+    poke:learnsMove data:focus_energy,
+        data:fury_swipes,
+        data:karate_chop,
+        data:leer,
+        data:low_kick,
+        data:scratch,
+        data:screech,
+        data:seismic_toss,
+        data:thrash .
+
+data:marowak a poke:Pokemon ;
+    poke:baseStat_attack 80 ;
+    poke:baseStat_defense 110 ;
+    poke:baseStat_hp 60 ;
+    poke:baseStat_special-attack 50 ;
+    poke:baseStat_special-defense 80 ;
+    poke:baseStat_speed 45 ;
+    poke:hasType data:ground ;
+    poke:learnsMove data:bone_club,
+        data:bonemerang,
+        data:focus_energy,
+        data:growl,
+        data:headbutt,
+        data:leer,
+        data:rage,
+        data:tail_whip,
+        data:thrash .
+
+data:meowth a poke:Pokemon ;
+    poke:baseStat_attack 45 ;
+    poke:baseStat_defense 35 ;
+    poke:baseStat_hp 40 ;
+    poke:baseStat_special-attack 40 ;
+    poke:baseStat_special-defense 40 ;
+    poke:baseStat_speed 90 ;
+    poke:hasType data:normal ;
+    poke:learnsMove data:bite,
+        data:fury_swipes,
+        data:growl,
+        data:pay_day,
+        data:scratch,
+        data:screech,
+        data:slash .
+
+data:metapod a poke:Pokemon ;
+    poke:baseStat_attack 20 ;
+    poke:baseStat_defense 55 ;
+    poke:baseStat_hp 50 ;
+    poke:baseStat_special-attack 25 ;
+    poke:baseStat_special-defense 25 ;
+    poke:baseStat_speed 30 ;
+    poke:hasType data:bug ;
+    poke:learnsMove data:harden .
+
+data:mew a poke:Pokemon ;
+    poke:baseStat_attack 100 ;
+    poke:baseStat_defense 100 ;
+    poke:baseStat_hp 100 ;
+    poke:baseStat_special-attack 100 ;
+    poke:baseStat_special-defense 100 ;
+    poke:baseStat_speed 100 ;
+    poke:hasType data:psychic ;
+    poke:learnsMove data:mega_punch,
+        data:metronome,
+        data:pound,
+        data:psychic,
+        data:transform .
+
+data:mewtwo a poke:Pokemon ;
+    poke:baseStat_attack 110 ;
+    poke:baseStat_defense 90 ;
+    poke:baseStat_hp 106 ;
+    poke:baseStat_special-attack 154 ;
+    poke:baseStat_special-defense 90 ;
+    poke:baseStat_speed 130 ;
+    poke:hasType data:psychic ;
+    poke:learnsMove data:amnesia,
+        data:barrier,
+        data:confusion,
+        data:disable,
+        data:mist,
+        data:psychic,
+        data:recover,
+        data:swift .
+
+data:moltres a poke:Pokemon ;
+    poke:baseStat_attack 100 ;
+    poke:baseStat_defense 90 ;
+    poke:baseStat_hp 90 ;
+    poke:baseStat_special-attack 125 ;
+    poke:baseStat_special-defense 85 ;
+    poke:baseStat_speed 90 ;
+    poke:hasType data:fire,
+        data:flying ;
+    poke:learnsMove data:agility,
+        data:fire_spin,
+        data:leer,
+        data:peck,
+        data:sky_attack .
+
+data:mr_mime a poke:Pokemon ;
+    poke:baseStat_attack 45 ;
+    poke:baseStat_defense 65 ;
+    poke:baseStat_hp 40 ;
+    poke:baseStat_special-attack 100 ;
+    poke:baseStat_special-defense 120 ;
+    poke:baseStat_speed 90 ;
+    poke:hasType data:fairy,
+        data:psychic ;
+    poke:learnsMove data:barrier,
+        data:confusion,
+        data:double_slap,
+        data:light_screen,
+        data:meditate,
+        data:substitute .
+
+data:muk a poke:Pokemon ;
+    poke:baseStat_attack 105 ;
+    poke:baseStat_defense 75 ;
+    poke:baseStat_hp 105 ;
+    poke:baseStat_special-attack 65 ;
+    poke:baseStat_special-defense 100 ;
+    poke:baseStat_speed 50 ;
+    poke:hasType data:poison ;
+    poke:learnsMove data:acid_armor,
+        data:disable,
+        data:harden,
+        data:minimize,
+        data:poison_gas,
+        data:pound,
+        data:screech,
+        data:sludge .
+
+data:nidoking a poke:Pokemon ;
+    poke:baseStat_attack 102 ;
+    poke:baseStat_defense 77 ;
+    poke:baseStat_hp 81 ;
+    poke:baseStat_special-attack 85 ;
+    poke:baseStat_special-defense 75 ;
+    poke:baseStat_speed 85 ;
+    poke:hasType data:ground,
+        data:poison ;
+    poke:learnsMove data:double_kick,
+        data:horn_attack,
+        data:poison_sting,
+        data:tackle,
+        data:thrash .
+
+data:nidoqueen a poke:Pokemon ;
+    poke:baseStat_attack 92 ;
+    poke:baseStat_defense 87 ;
+    poke:baseStat_hp 90 ;
+    poke:baseStat_special-attack 75 ;
+    poke:baseStat_special-defense 85 ;
+    poke:baseStat_speed 76 ;
+    poke:hasType data:ground,
+        data:poison ;
+    poke:learnsMove data:body_slam,
+        data:double_kick,
+        data:poison_sting,
+        data:scratch,
+        data:tackle,
+        data:tail_whip .
+
+data:nidoran_f a poke:Pokemon ;
+    poke:baseStat_attack 47 ;
+    poke:baseStat_defense 52 ;
+    poke:baseStat_hp 55 ;
+    poke:baseStat_special-attack 40 ;
+    poke:baseStat_special-defense 40 ;
+    poke:baseStat_speed 41 ;
+    poke:hasType data:poison ;
+    poke:learnsMove data:bite,
+        data:double_kick,
+        data:fury_swipes,
+        data:growl,
+        data:poison_sting,
+        data:scratch,
+        data:tackle,
+        data:tail_whip .
+
+data:nidoran_m a poke:Pokemon ;
+    poke:baseStat_attack 57 ;
+    poke:baseStat_defense 40 ;
+    poke:baseStat_hp 46 ;
+    poke:baseStat_special-attack 40 ;
+    poke:baseStat_special-defense 40 ;
+    poke:baseStat_speed 50 ;
+    poke:hasType data:poison ;
+    poke:learnsMove data:double_kick,
+        data:focus_energy,
+        data:fury_attack,
+        data:horn_attack,
+        data:horn_drill,
+        data:leer,
+        data:poison_sting,
+        data:tackle .
+
+data:nidorina a poke:Pokemon ;
+    poke:baseStat_attack 62 ;
+    poke:baseStat_defense 67 ;
+    poke:baseStat_hp 70 ;
+    poke:baseStat_special-attack 55 ;
+    poke:baseStat_special-defense 55 ;
+    poke:baseStat_speed 56 ;
+    poke:hasType data:poison ;
+    poke:learnsMove data:bite,
+        data:double_kick,
+        data:fury_swipes,
+        data:growl,
+        data:poison_sting,
+        data:scratch,
+        data:tackle,
+        data:tail_whip .
+
+data:nidorino a poke:Pokemon ;
+    poke:baseStat_attack 72 ;
+    poke:baseStat_defense 57 ;
+    poke:baseStat_hp 61 ;
+    poke:baseStat_special-attack 55 ;
+    poke:baseStat_special-defense 55 ;
+    poke:baseStat_speed 65 ;
+    poke:hasType data:poison ;
+    poke:learnsMove data:double_kick,
+        data:focus_energy,
+        data:fury_attack,
+        data:horn_attack,
+        data:horn_drill,
+        data:leer,
+        data:poison_sting,
+        data:tackle .
+
+data:ninetales a poke:Pokemon ;
+    poke:baseStat_attack 76 ;
+    poke:baseStat_defense 75 ;
+    poke:baseStat_hp 73 ;
+    poke:baseStat_special-attack 81 ;
+    poke:baseStat_special-defense 100 ;
+    poke:baseStat_speed 100 ;
+    poke:hasType data:fire ;
+    poke:learnsMove data:ember,
+        data:quick_attack,
+        data:roar,
+        data:tail_whip .
+
+data:oddish a poke:Pokemon ;
+    poke:baseStat_attack 50 ;
+    poke:baseStat_defense 55 ;
+    poke:baseStat_hp 45 ;
+    poke:baseStat_special-attack 75 ;
+    poke:baseStat_special-defense 65 ;
+    poke:baseStat_speed 30 ;
+    poke:hasType data:grass,
+        data:poison ;
+    poke:learnsMove data:absorb,
+        data:acid,
+        data:petal_dance,
+        data:poison_powder,
+        data:sleep_powder,
+        data:solar_beam,
+        data:stun_spore .
+
+data:omanyte a poke:Pokemon ;
+    poke:baseStat_attack 40 ;
+    poke:baseStat_defense 100 ;
+    poke:baseStat_hp 35 ;
+    poke:baseStat_special-attack 90 ;
+    poke:baseStat_special-defense 55 ;
+    poke:baseStat_speed 35 ;
+    poke:hasType data:rock,
+        data:water ;
+    poke:learnsMove data:horn_attack,
+        data:hydro_pump,
+        data:leer,
+        data:spike_cannon,
+        data:water_gun,
+        data:withdraw .
+
+data:omastar a poke:Pokemon ;
+    poke:baseStat_attack 60 ;
+    poke:baseStat_defense 125 ;
+    poke:baseStat_hp 70 ;
+    poke:baseStat_special-attack 115 ;
+    poke:baseStat_special-defense 70 ;
+    poke:baseStat_speed 55 ;
+    poke:hasType data:rock,
+        data:water ;
+    poke:learnsMove data:horn_attack,
+        data:hydro_pump,
+        data:leer,
+        data:spike_cannon,
+        data:water_gun,
+        data:withdraw .
+
+data:onix a poke:Pokemon ;
+    poke:baseStat_attack 45 ;
+    poke:baseStat_defense 160 ;
+    poke:baseStat_hp 35 ;
+    poke:baseStat_special-attack 30 ;
+    poke:baseStat_special-defense 45 ;
+    poke:baseStat_speed 70 ;
+    poke:hasType data:ground,
+        data:rock ;
+    poke:learnsMove data:bind,
+        data:harden,
+        data:rage,
+        data:rock_throw,
+        data:screech,
+        data:slam,
+        data:tackle .
+
+data:paras a poke:Pokemon ;
+    poke:baseStat_attack 70 ;
+    poke:baseStat_defense 55 ;
+    poke:baseStat_hp 35 ;
+    poke:baseStat_special-attack 45 ;
+    poke:baseStat_special-defense 55 ;
+    poke:baseStat_speed 25 ;
+    poke:hasType data:bug,
+        data:grass ;
+    poke:learnsMove data:growth,
+        data:leech_life,
+        data:scratch,
+        data:slash,
+        data:spore,
+        data:stun_spore .
+
+data:parasect a poke:Pokemon ;
+    poke:baseStat_attack 95 ;
+    poke:baseStat_defense 80 ;
+    poke:baseStat_hp 60 ;
+    poke:baseStat_special-attack 60 ;
+    poke:baseStat_special-defense 80 ;
+    poke:baseStat_speed 30 ;
+    poke:hasType data:bug,
+        data:grass ;
+    poke:learnsMove data:growth,
+        data:leech_life,
+        data:scratch,
+        data:slash,
+        data:spore,
+        data:stun_spore .
+
+data:persian a poke:Pokemon ;
+    poke:baseStat_attack 70 ;
+    poke:baseStat_defense 60 ;
+    poke:baseStat_hp 65 ;
+    poke:baseStat_special-attack 65 ;
+    poke:baseStat_special-defense 65 ;
+    poke:baseStat_speed 115 ;
+    poke:hasType data:normal ;
+    poke:learnsMove data:bite,
+        data:fury_swipes,
+        data:growl,
+        data:pay_day,
+        data:scratch,
+        data:screech,
+        data:slash .
+
+data:pidgeot a poke:Pokemon ;
+    poke:baseStat_attack 80 ;
+    poke:baseStat_defense 75 ;
+    poke:baseStat_hp 83 ;
+    poke:baseStat_special-attack 70 ;
+    poke:baseStat_special-defense 70 ;
+    poke:baseStat_speed 101 ;
+    poke:hasType data:flying,
+        data:normal ;
+    poke:learnsMove data:agility,
+        data:gust,
+        data:mirror_move,
+        data:quick_attack,
+        data:sand_attack,
+        data:whirlwind,
+        data:wing_attack .
+
+data:pidgeotto a poke:Pokemon ;
+    poke:baseStat_attack 60 ;
+    poke:baseStat_defense 55 ;
+    poke:baseStat_hp 63 ;
+    poke:baseStat_special-attack 50 ;
+    poke:baseStat_special-defense 50 ;
+    poke:baseStat_speed 71 ;
+    poke:hasType data:flying,
+        data:normal ;
+    poke:learnsMove data:agility,
+        data:gust,
+        data:mirror_move,
+        data:quick_attack,
+        data:sand_attack,
+        data:whirlwind,
+        data:wing_attack .
+
+data:pidgey a poke:Pokemon ;
+    poke:baseStat_attack 45 ;
+    poke:baseStat_defense 40 ;
+    poke:baseStat_hp 40 ;
+    poke:baseStat_special-attack 35 ;
+    poke:baseStat_special-defense 35 ;
+    poke:baseStat_speed 56 ;
+    poke:hasType data:flying,
+        data:normal ;
+    poke:learnsMove data:agility,
+        data:gust,
+        data:mirror_move,
+        data:quick_attack,
+        data:sand_attack,
+        data:whirlwind,
+        data:wing_attack .
+
+data:pikachu a poke:Pokemon ;
+    poke:baseStat_attack 55 ;
+    poke:baseStat_defense 40 ;
+    poke:baseStat_hp 35 ;
+    poke:baseStat_special-attack 50 ;
+    poke:baseStat_special-defense 50 ;
+    poke:baseStat_speed 90 ;
+    poke:hasType data:electric ;
+    poke:learnsMove data:agility,
+        data:double_team,
+        data:growl,
+        data:light_screen,
+        data:quick_attack,
+        data:slam,
+        data:swift,
+        data:tail_whip,
+        data:thunder,
+        data:thunder_shock,
+        data:thunder_wave,
+        data:thunderbolt .
+
+data:pinsir a poke:Pokemon ;
+    poke:baseStat_attack 125 ;
+    poke:baseStat_defense 100 ;
+    poke:baseStat_hp 65 ;
+    poke:baseStat_special-attack 55 ;
+    poke:baseStat_special-defense 70 ;
+    poke:baseStat_speed 85 ;
+    poke:hasType data:bug ;
+    poke:learnsMove data:bind,
+        data:focus_energy,
+        data:guillotine,
+        data:harden,
+        data:seismic_toss,
+        data:slash,
+        data:swords_dance,
+        data:vice_grip .
+
+data:poliwag a poke:Pokemon ;
+    poke:baseStat_attack 50 ;
+    poke:baseStat_defense 40 ;
+    poke:baseStat_hp 40 ;
+    poke:baseStat_special-attack 40 ;
+    poke:baseStat_special-defense 40 ;
+    poke:baseStat_speed 90 ;
+    poke:hasType data:water ;
+    poke:learnsMove data:amnesia,
+        data:body_slam,
+        data:bubble,
+        data:double_slap,
+        data:hydro_pump,
+        data:hypnosis,
+        data:water_gun .
+
+data:poliwhirl a poke:Pokemon ;
+    poke:baseStat_attack 65 ;
+    poke:baseStat_defense 65 ;
+    poke:baseStat_hp 65 ;
+    poke:baseStat_special-attack 50 ;
+    poke:baseStat_special-defense 50 ;
+    poke:baseStat_speed 90 ;
+    poke:hasType data:water ;
+    poke:learnsMove data:amnesia,
+        data:body_slam,
+        data:bubble,
+        data:double_slap,
+        data:hydro_pump,
+        data:hypnosis,
+        data:water_gun .
+
+data:poliwrath a poke:Pokemon ;
+    poke:baseStat_attack 95 ;
+    poke:baseStat_defense 95 ;
+    poke:baseStat_hp 90 ;
+    poke:baseStat_special-attack 70 ;
+    poke:baseStat_special-defense 90 ;
+    poke:baseStat_speed 70 ;
+    poke:hasType data:fighting,
+        data:water ;
+    poke:learnsMove data:body_slam,
+        data:double_slap,
+        data:hypnosis,
+        data:water_gun .
+
+data:ponyta a poke:Pokemon ;
+    poke:baseStat_attack 85 ;
+    poke:baseStat_defense 55 ;
+    poke:baseStat_hp 50 ;
+    poke:baseStat_special-attack 65 ;
+    poke:baseStat_special-defense 65 ;
+    poke:baseStat_speed 90 ;
+    poke:hasType data:fire ;
+    poke:learnsMove data:agility,
+        data:ember,
+        data:fire_spin,
+        data:growl,
+        data:stomp,
+        data:tail_whip,
+        data:take_down .
+
+data:porygon a poke:Pokemon ;
+    poke:baseStat_attack 60 ;
+    poke:baseStat_defense 70 ;
+    poke:baseStat_hp 65 ;
+    poke:baseStat_special-attack 85 ;
+    poke:baseStat_special-defense 75 ;
+    poke:baseStat_speed 40 ;
+    poke:hasType data:normal ;
+    poke:learnsMove data:agility,
+        data:conversion,
+        data:psybeam,
+        data:recover,
+        data:sharpen,
+        data:tackle,
+        data:tri_attack .
+
+data:primeape a poke:Pokemon ;
+    poke:baseStat_attack 105 ;
+    poke:baseStat_defense 60 ;
+    poke:baseStat_hp 65 ;
+    poke:baseStat_special-attack 60 ;
+    poke:baseStat_special-defense 70 ;
+    poke:baseStat_speed 95 ;
+    poke:hasType data:fighting ;
+    poke:learnsMove data:focus_energy,
+        data:fury_swipes,
+        data:karate_chop,
+        data:leer,
+        data:low_kick,
+        data:rage,
+        data:scratch,
+        data:screech,
+        data:seismic_toss,
+        data:thrash .
+
+data:psyduck a poke:Pokemon ;
+    poke:baseStat_attack 52 ;
+    poke:baseStat_defense 48 ;
+    poke:baseStat_hp 50 ;
+    poke:baseStat_special-attack 65 ;
+    poke:baseStat_special-defense 50 ;
+    poke:baseStat_speed 55 ;
+    poke:hasType data:water ;
+    poke:learnsMove data:confusion,
+        data:disable,
+        data:fury_swipes,
+        data:hydro_pump,
+        data:scratch,
+        data:tail_whip .
+
+data:raichu a poke:Pokemon ;
+    poke:baseStat_attack 90 ;
+    poke:baseStat_defense 55 ;
+    poke:baseStat_hp 60 ;
+    poke:baseStat_special-attack 90 ;
+    poke:baseStat_special-defense 80 ;
+    poke:baseStat_speed 110 ;
+    poke:hasType data:electric ;
+    poke:learnsMove data:growl,
+        data:thunder_shock,
+        data:thunder_wave .
+
+data:rapidash a poke:Pokemon ;
+    poke:baseStat_attack 100 ;
+    poke:baseStat_defense 70 ;
+    poke:baseStat_hp 65 ;
+    poke:baseStat_special-attack 80 ;
+    poke:baseStat_special-defense 80 ;
+    poke:baseStat_speed 105 ;
+    poke:hasType data:fire ;
+    poke:learnsMove data:agility,
+        data:ember,
+        data:fire_spin,
+        data:growl,
+        data:stomp,
+        data:tail_whip,
+        data:take_down .
+
+data:raticate a poke:Pokemon ;
+    poke:baseStat_attack 81 ;
+    poke:baseStat_defense 60 ;
+    poke:baseStat_hp 55 ;
+    poke:baseStat_special-attack 50 ;
+    poke:baseStat_special-defense 70 ;
+    poke:baseStat_speed 97 ;
+    poke:hasType data:normal ;
+    poke:learnsMove data:focus_energy,
+        data:hyper_fang,
+        data:quick_attack,
+        data:super_fang,
+        data:tackle,
+        data:tail_whip .
+
+data:rattata a poke:Pokemon ;
+    poke:baseStat_attack 56 ;
+    poke:baseStat_defense 35 ;
+    poke:baseStat_hp 30 ;
+    poke:baseStat_special-attack 25 ;
+    poke:baseStat_special-defense 35 ;
+    poke:baseStat_speed 72 ;
+    poke:hasType data:normal ;
+    poke:learnsMove data:focus_energy,
+        data:hyper_fang,
+        data:quick_attack,
+        data:super_fang,
+        data:tackle,
+        data:tail_whip .
+
+data:rhydon a poke:Pokemon ;
+    poke:baseStat_attack 130 ;
+    poke:baseStat_defense 120 ;
+    poke:baseStat_hp 105 ;
+    poke:baseStat_special-attack 45 ;
+    poke:baseStat_special-defense 45 ;
+    poke:baseStat_speed 40 ;
+    poke:hasType data:ground,
+        data:rock ;
+    poke:learnsMove data:fury_attack,
+        data:horn_attack,
+        data:horn_drill,
+        data:leer,
+        data:stomp,
+        data:tail_whip,
+        data:take_down .
+
+data:rhyhorn a poke:Pokemon ;
+    poke:baseStat_attack 85 ;
+    poke:baseStat_defense 95 ;
+    poke:baseStat_hp 80 ;
+    poke:baseStat_special-attack 30 ;
+    poke:baseStat_special-defense 30 ;
+    poke:baseStat_speed 25 ;
+    poke:hasType data:ground,
+        data:rock ;
+    poke:learnsMove data:fury_attack,
+        data:horn_attack,
+        data:horn_drill,
+        data:leer,
+        data:stomp,
+        data:tail_whip,
+        data:take_down .
+
+data:sandshrew a poke:Pokemon ;
+    poke:baseStat_attack 75 ;
+    poke:baseStat_defense 85 ;
+    poke:baseStat_hp 50 ;
+    poke:baseStat_special-attack 20 ;
+    poke:baseStat_special-defense 30 ;
+    poke:baseStat_speed 40 ;
+    poke:hasType data:ground ;
+    poke:learnsMove data:fury_swipes,
+        data:poison_sting,
+        data:sand_attack,
+        data:scratch,
+        data:slash,
+        data:swift .
+
+data:sandslash a poke:Pokemon ;
+    poke:baseStat_attack 100 ;
+    poke:baseStat_defense 110 ;
+    poke:baseStat_hp 75 ;
+    poke:baseStat_special-attack 45 ;
+    poke:baseStat_special-defense 55 ;
+    poke:baseStat_speed 65 ;
+    poke:hasType data:ground ;
+    poke:learnsMove data:fury_swipes,
+        data:poison_sting,
+        data:sand_attack,
+        data:scratch,
+        data:slash,
+        data:swift .
+
+data:scyther a poke:Pokemon ;
+    poke:baseStat_attack 110 ;
+    poke:baseStat_defense 80 ;
+    poke:baseStat_hp 70 ;
+    poke:baseStat_special-attack 55 ;
+    poke:baseStat_special-defense 80 ;
+    poke:baseStat_speed 105 ;
+    poke:hasType data:bug,
+        data:flying ;
+    poke:learnsMove data:agility,
+        data:double_team,
+        data:focus_energy,
+        data:leer,
+        data:quick_attack,
+        data:slash,
+        data:swords_dance,
+        data:wing_attack .
+
+data:seadra a poke:Pokemon ;
+    poke:baseStat_attack 65 ;
+    poke:baseStat_defense 95 ;
+    poke:baseStat_hp 55 ;
+    poke:baseStat_special-attack 95 ;
+    poke:baseStat_special-defense 45 ;
+    poke:baseStat_speed 85 ;
+    poke:hasType data:water ;
+    poke:learnsMove data:agility,
+        data:bubble,
+        data:hydro_pump,
+        data:leer,
+        data:smokescreen,
+        data:water_gun .
+
+data:seaking a poke:Pokemon ;
+    poke:baseStat_attack 92 ;
+    poke:baseStat_defense 65 ;
+    poke:baseStat_hp 80 ;
+    poke:baseStat_special-attack 65 ;
+    poke:baseStat_special-defense 80 ;
+    poke:baseStat_speed 68 ;
+    poke:hasType data:water ;
+    poke:learnsMove data:agility,
+        data:fury_attack,
+        data:horn_attack,
+        data:horn_drill,
+        data:peck,
+        data:supersonic,
+        data:tail_whip,
+        data:waterfall .
+
+data:seel a poke:Pokemon ;
+    poke:baseStat_attack 45 ;
+    poke:baseStat_defense 55 ;
+    poke:baseStat_hp 65 ;
+    poke:baseStat_special-attack 45 ;
+    poke:baseStat_special-defense 70 ;
+    poke:baseStat_speed 45 ;
+    poke:hasType data:water ;
+    poke:learnsMove data:aurora_beam,
+        data:growl,
+        data:headbutt,
+        data:ice_beam,
+        data:rest,
+        data:take_down .
+
+data:shellder a poke:Pokemon ;
+    poke:baseStat_attack 65 ;
+    poke:baseStat_defense 100 ;
+    poke:baseStat_hp 30 ;
+    poke:baseStat_special-attack 45 ;
+    poke:baseStat_special-defense 25 ;
+    poke:baseStat_speed 40 ;
+    poke:hasType data:water ;
+    poke:learnsMove data:aurora_beam,
+        data:clamp,
+        data:ice_beam,
+        data:leer,
+        data:supersonic,
+        data:tackle,
+        data:withdraw .
+
+data:slowbro a poke:Pokemon ;
+    poke:baseStat_attack 75 ;
+    poke:baseStat_defense 110 ;
+    poke:baseStat_hp 95 ;
+    poke:baseStat_special-attack 100 ;
+    poke:baseStat_special-defense 80 ;
+    poke:baseStat_speed 30 ;
+    poke:hasType data:psychic,
+        data:water ;
+    poke:learnsMove data:amnesia,
+        data:confusion,
+        data:disable,
+        data:growl,
+        data:headbutt,
+        data:psychic,
+        data:water_gun,
+        data:withdraw .
+
+data:slowpoke a poke:Pokemon ;
+    poke:baseStat_attack 65 ;
+    poke:baseStat_defense 65 ;
+    poke:baseStat_hp 90 ;
+    poke:baseStat_special-attack 40 ;
+    poke:baseStat_special-defense 40 ;
+    poke:baseStat_speed 15 ;
+    poke:hasType data:psychic,
+        data:water ;
+    poke:learnsMove data:amnesia,
+        data:confusion,
+        data:disable,
+        data:growl,
+        data:headbutt,
+        data:psychic,
+        data:water_gun .
+
+data:snorlax a poke:Pokemon ;
+    poke:baseStat_attack 110 ;
+    poke:baseStat_defense 65 ;
+    poke:baseStat_hp 160 ;
+    poke:baseStat_special-attack 65 ;
+    poke:baseStat_special-defense 110 ;
+    poke:baseStat_speed 30 ;
+    poke:hasType data:normal ;
+    poke:learnsMove data:amnesia,
+        data:body_slam,
+        data:double_edge,
+        data:harden,
+        data:headbutt,
+        data:hyper_beam,
+        data:rest .
+
+data:spearow a poke:Pokemon ;
+    poke:baseStat_attack 60 ;
+    poke:baseStat_defense 30 ;
+    poke:baseStat_hp 40 ;
+    poke:baseStat_special-attack 31 ;
+    poke:baseStat_special-defense 31 ;
+    poke:baseStat_speed 70 ;
+    poke:hasType data:flying,
+        data:normal ;
+    poke:learnsMove data:agility,
+        data:drill_peck,
+        data:fury_attack,
+        data:growl,
+        data:leer,
+        data:mirror_move,
+        data:peck .
+
+data:squirtle a poke:Pokemon ;
+    poke:baseStat_attack 48 ;
+    poke:baseStat_defense 65 ;
+    poke:baseStat_hp 44 ;
+    poke:baseStat_special-attack 50 ;
+    poke:baseStat_special-defense 64 ;
+    poke:baseStat_speed 43 ;
+    poke:hasType data:water ;
+    poke:learnsMove data:bite,
+        data:bubble,
+        data:hydro_pump,
+        data:skull_bash,
+        data:tackle,
+        data:tail_whip,
+        data:water_gun,
+        data:withdraw .
+
+data:starmie a poke:Pokemon ;
+    poke:baseStat_attack 75 ;
+    poke:baseStat_defense 85 ;
+    poke:baseStat_hp 60 ;
+    poke:baseStat_special-attack 100 ;
+    poke:baseStat_special-defense 85 ;
+    poke:baseStat_speed 115 ;
+    poke:hasType data:psychic,
+        data:water ;
+    poke:learnsMove data:harden,
+        data:tackle,
+        data:water_gun .
+
+data:staryu a poke:Pokemon ;
+    poke:baseStat_attack 45 ;
+    poke:baseStat_defense 55 ;
+    poke:baseStat_hp 30 ;
+    poke:baseStat_special-attack 70 ;
+    poke:baseStat_special-defense 55 ;
+    poke:baseStat_speed 85 ;
+    poke:hasType data:water ;
+    poke:learnsMove data:harden,
+        data:hydro_pump,
+        data:light_screen,
+        data:minimize,
+        data:recover,
+        data:swift,
+        data:tackle,
+        data:water_gun .
+
+data:tangela a poke:Pokemon ;
+    poke:baseStat_attack 55 ;
+    poke:baseStat_defense 115 ;
+    poke:baseStat_hp 65 ;
+    poke:baseStat_special-attack 100 ;
+    poke:baseStat_special-defense 40 ;
+    poke:baseStat_speed 60 ;
+    poke:hasType data:grass ;
+    poke:learnsMove data:absorb,
+        data:bind,
+        data:constrict,
+        data:growth,
+        data:poison_powder,
+        data:slam,
+        data:sleep_powder,
+        data:stun_spore,
+        data:vine_whip .
+
+data:tauros a poke:Pokemon ;
+    poke:baseStat_attack 100 ;
+    poke:baseStat_defense 95 ;
+    poke:baseStat_hp 75 ;
+    poke:baseStat_special-attack 40 ;
+    poke:baseStat_special-defense 70 ;
+    poke:baseStat_speed 110 ;
+    poke:hasType data:normal ;
+    poke:learnsMove data:leer,
+        data:rage,
+        data:stomp,
+        data:tackle,
+        data:tail_whip,
+        data:take_down .
+
+data:tentacool a poke:Pokemon ;
+    poke:baseStat_attack 40 ;
+    poke:baseStat_defense 35 ;
+    poke:baseStat_hp 40 ;
+    poke:baseStat_special-attack 50 ;
+    poke:baseStat_special-defense 100 ;
+    poke:baseStat_speed 70 ;
+    poke:hasType data:poison,
+        data:water ;
+    poke:learnsMove data:acid,
+        data:barrier,
+        data:constrict,
+        data:hydro_pump,
+        data:poison_sting,
+        data:screech,
+        data:supersonic,
+        data:water_gun,
+        data:wrap .
+
+data:tentacruel a poke:Pokemon ;
+    poke:baseStat_attack 70 ;
+    poke:baseStat_defense 65 ;
+    poke:baseStat_hp 80 ;
+    poke:baseStat_special-attack 80 ;
+    poke:baseStat_special-defense 120 ;
+    poke:baseStat_speed 100 ;
+    poke:hasType data:poison,
+        data:water ;
+    poke:learnsMove data:acid,
+        data:barrier,
+        data:constrict,
+        data:hydro_pump,
+        data:poison_sting,
+        data:screech,
+        data:supersonic,
+        data:water_gun,
+        data:wrap .
+
+data:vaporeon a poke:Pokemon ;
+    poke:baseStat_attack 65 ;
+    poke:baseStat_defense 60 ;
+    poke:baseStat_hp 130 ;
+    poke:baseStat_special-attack 110 ;
+    poke:baseStat_special-defense 95 ;
+    poke:baseStat_speed 65 ;
+    poke:hasType data:water ;
+    poke:learnsMove data:acid_armor,
+        data:aurora_beam,
+        data:bite,
+        data:haze,
+        data:hydro_pump,
+        data:mist,
+        data:quick_attack,
+        data:sand_attack,
+        data:tackle,
+        data:tail_whip,
+        data:water_gun .
+
+data:venomoth a poke:Pokemon ;
+    poke:baseStat_attack 65 ;
+    poke:baseStat_defense 60 ;
+    poke:baseStat_hp 70 ;
+    poke:baseStat_special-attack 90 ;
+    poke:baseStat_special-defense 75 ;
+    poke:baseStat_speed 90 ;
+    poke:hasType data:bug,
+        data:poison ;
+    poke:learnsMove data:confusion,
+        data:disable,
+        data:leech_life,
+        data:poison_powder,
+        data:psybeam,
+        data:psychic,
+        data:sleep_powder,
+        data:stun_spore,
+        data:supersonic,
+        data:tackle .
+
+data:venonat a poke:Pokemon ;
+    poke:baseStat_attack 55 ;
+    poke:baseStat_defense 50 ;
+    poke:baseStat_hp 60 ;
+    poke:baseStat_special-attack 40 ;
+    poke:baseStat_special-defense 55 ;
+    poke:baseStat_speed 45 ;
+    poke:hasType data:bug,
+        data:poison ;
+    poke:learnsMove data:confusion,
+        data:disable,
+        data:leech_life,
+        data:poison_powder,
+        data:psybeam,
+        data:psychic,
+        data:sleep_powder,
+        data:stun_spore,
+        data:supersonic,
+        data:tackle .
+
+data:venusaur a poke:Pokemon ;
+    poke:baseStat_attack 82 ;
+    poke:baseStat_defense 83 ;
+    poke:baseStat_hp 80 ;
+    poke:baseStat_special-attack 100 ;
+    poke:baseStat_special-defense 100 ;
+    poke:baseStat_speed 80 ;
+    poke:hasType data:grass,
+        data:poison ;
+    poke:learnsMove data:growl,
+        data:growth,
+        data:leech_seed,
+        data:poison_powder,
+        data:razor_leaf,
+        data:sleep_powder,
+        data:solar_beam,
+        data:tackle,
+        data:vine_whip .
+
+data:victreebel a poke:Pokemon ;
+    poke:baseStat_attack 105 ;
+    poke:baseStat_defense 65 ;
+    poke:baseStat_hp 80 ;
+    poke:baseStat_special-attack 100 ;
+    poke:baseStat_special-defense 70 ;
+    poke:baseStat_speed 70 ;
+    poke:hasType data:grass,
+        data:poison ;
+    poke:learnsMove data:acid,
+        data:poison_powder,
+        data:razor_leaf,
+        data:sleep_powder,
+        data:stun_spore,
+        data:wrap .
+
+data:vileplume a poke:Pokemon ;
+    poke:baseStat_attack 80 ;
+    poke:baseStat_defense 85 ;
+    poke:baseStat_hp 75 ;
+    poke:baseStat_special-attack 110 ;
+    poke:baseStat_special-defense 90 ;
+    poke:baseStat_speed 50 ;
+    poke:hasType data:grass,
+        data:poison ;
+    poke:learnsMove data:acid,
+        data:petal_dance,
+        data:poison_powder,
+        data:sleep_powder,
+        data:stun_spore .
+
+data:voltorb a poke:Pokemon ;
+    poke:baseStat_attack 30 ;
+    poke:baseStat_defense 50 ;
+    poke:baseStat_hp 40 ;
+    poke:baseStat_special-attack 55 ;
+    poke:baseStat_special-defense 55 ;
+    poke:baseStat_speed 100 ;
+    poke:hasType data:electric ;
+    poke:learnsMove data:explosion,
+        data:light_screen,
+        data:screech,
+        data:self_destruct,
+        data:sonic_boom,
+        data:swift,
+        data:tackle .
+
+data:vulpix a poke:Pokemon ;
+    poke:baseStat_attack 41 ;
+    poke:baseStat_defense 40 ;
+    poke:baseStat_hp 38 ;
+    poke:baseStat_special-attack 50 ;
+    poke:baseStat_special-defense 65 ;
+    poke:baseStat_speed 65 ;
+    poke:hasType data:fire ;
+    poke:learnsMove data:confuse_ray,
+        data:ember,
+        data:fire_spin,
+        data:flamethrower,
+        data:quick_attack,
+        data:roar,
+        data:tail_whip .
+
+data:wartortle a poke:Pokemon ;
+    poke:baseStat_attack 63 ;
+    poke:baseStat_defense 80 ;
+    poke:baseStat_hp 59 ;
+    poke:baseStat_special-attack 65 ;
+    poke:baseStat_special-defense 80 ;
+    poke:baseStat_speed 58 ;
+    poke:hasType data:water ;
+    poke:learnsMove data:bite,
+        data:bubble,
+        data:hydro_pump,
+        data:skull_bash,
+        data:tackle,
+        data:tail_whip,
+        data:water_gun,
+        data:withdraw .
+
+data:weedle a poke:Pokemon ;
+    poke:baseStat_attack 35 ;
+    poke:baseStat_defense 30 ;
+    poke:baseStat_hp 40 ;
+    poke:baseStat_special-attack 20 ;
+    poke:baseStat_special-defense 20 ;
+    poke:baseStat_speed 50 ;
+    poke:hasType data:bug,
+        data:poison ;
+    poke:learnsMove data:poison_sting,
+        data:string_shot .
+
+data:weepinbell a poke:Pokemon ;
+    poke:baseStat_attack 90 ;
+    poke:baseStat_defense 50 ;
+    poke:baseStat_hp 65 ;
+    poke:baseStat_special-attack 85 ;
+    poke:baseStat_special-defense 45 ;
+    poke:baseStat_speed 55 ;
+    poke:hasType data:grass,
+        data:poison ;
+    poke:learnsMove data:acid,
+        data:growth,
+        data:poison_powder,
+        data:razor_leaf,
+        data:slam,
+        data:sleep_powder,
+        data:stun_spore,
+        data:vine_whip,
+        data:wrap .
+
+data:weezing a poke:Pokemon ;
+    poke:baseStat_attack 90 ;
+    poke:baseStat_defense 120 ;
+    poke:baseStat_hp 65 ;
+    poke:baseStat_special-attack 85 ;
+    poke:baseStat_special-defense 70 ;
+    poke:baseStat_speed 60 ;
+    poke:hasType data:poison ;
+    poke:learnsMove data:explosion,
+        data:haze,
+        data:self_destruct,
+        data:sludge,
+        data:smog,
+        data:smokescreen,
+        data:tackle .
+
+data:wigglytuff a poke:Pokemon ;
+    poke:baseStat_attack 70 ;
+    poke:baseStat_defense 45 ;
+    poke:baseStat_hp 140 ;
+    poke:baseStat_special-attack 85 ;
+    poke:baseStat_special-defense 50 ;
+    poke:baseStat_speed 45 ;
+    poke:hasType data:fairy,
+        data:normal ;
+    poke:learnsMove data:defense_curl,
+        data:disable,
+        data:double_slap,
+        data:sing .
+
+data:zapdos a poke:Pokemon ;
+    poke:baseStat_attack 90 ;
+    poke:baseStat_defense 85 ;
+    poke:baseStat_hp 90 ;
+    poke:baseStat_special-attack 125 ;
+    poke:baseStat_special-defense 90 ;
+    poke:baseStat_speed 100 ;
+    poke:hasType data:electric,
+        data:flying ;
+    poke:learnsMove data:agility,
+        data:drill_peck,
+        data:light_screen,
+        data:thunder,
+        data:thunder_shock .
+
+data:zubat a poke:Pokemon ;
+    poke:baseStat_attack 45 ;
+    poke:baseStat_defense 35 ;
+    poke:baseStat_hp 40 ;
+    poke:baseStat_special-attack 30 ;
+    poke:baseStat_special-defense 40 ;
+    poke:baseStat_speed 55 ;
+    poke:hasType data:flying,
+        data:poison ;
+    poke:learnsMove data:bite,
+        data:confuse_ray,
+        data:haze,
+        data:leech_life,
+        data:supersonic,
+        data:wing_attack .
+
+poke:accuracy a owl:DatatypeProperty ;
+    rdfs:label "accuracy" ;
+    rdfs:domain poke:Move ;
+    rdfs:range xsd:integer .
+
+poke:basePower a owl:DatatypeProperty ;
+    rdfs:label "basePower" ;
+    rdfs:domain poke:Move ;
+    rdfs:range xsd:integer .
+
+poke:baseStat_attack a owl:DatatypeProperty ;
+    rdfs:label "baseStat_attack" ;
+    rdfs:domain poke:Pokemon ;
+    rdfs:range xsd:integer .
+
+poke:baseStat_defense a owl:DatatypeProperty ;
+    rdfs:label "baseStat_defense" ;
+    rdfs:domain poke:Pokemon ;
+    rdfs:range xsd:integer .
+
+poke:baseStat_hp a owl:DatatypeProperty ;
+    rdfs:label "baseStat_hp" ;
+    rdfs:domain poke:Pokemon ;
+    rdfs:range xsd:integer .
+
+poke:baseStat_special-attack a owl:DatatypeProperty ;
+    rdfs:label "baseStat_special-attack" ;
+    rdfs:domain poke:Pokemon ;
+    rdfs:range xsd:integer .
+
+poke:baseStat_special-defense a owl:DatatypeProperty ;
+    rdfs:label "baseStat_special-defense" ;
+    rdfs:domain poke:Pokemon ;
+    rdfs:range xsd:integer .
+
+poke:baseStat_speed a owl:DatatypeProperty ;
+    rdfs:label "baseStat_speed" ;
+    rdfs:domain poke:Pokemon ;
+    rdfs:range xsd:integer .
+
+poke:causesStatus a owl:ObjectProperty ;
+    rdfs:label "causesStatus" ;
+    rdfs:domain poke:Move ;
+    rdfs:range poke:StatusEffect .
+
+poke:damageClass a owl:DatatypeProperty ;
+    rdfs:label "damageClass" ;
+    rdfs:domain poke:Move ;
+    rdfs:range xsd:string .
+
+poke:hasMoveType a owl:ObjectProperty ;
+    rdfs:label "hasMoveType" ;
+    rdfs:domain poke:Move ;
+    rdfs:range poke:Type .
+
+poke:hasType a owl:ObjectProperty ;
+    rdfs:label "hasType" ;
+    rdfs:domain poke:Pokemon ;
+    rdfs:range poke:Type .
+
+poke:immuneAgainst a owl:ObjectProperty ;
+    rdfs:label "immuneAgainst" ;
+    rdfs:domain poke:Type ;
+    rdfs:range poke:Type .
+
+poke:learnsMove a owl:ObjectProperty ;
+    rdfs:label "learnsMove" ;
+    rdfs:domain poke:Pokemon ;
+    rdfs:range poke:Move .
+
+poke:notVeryEffectiveAgainst a owl:ObjectProperty ;
+    rdfs:label "notVeryEffectiveAgainst" ;
+    rdfs:domain poke:Type ;
+    rdfs:range poke:Type .
+
+poke:superEffectiveAgainst a owl:ObjectProperty ;
+    rdfs:label "superEffectiveAgainst" ;
+    rdfs:domain poke:Type ;
+    rdfs:range poke:Type .
+
+data:conversion a poke:Move ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:normal .
+
+data:counter a poke:Move ;
+    poke:accuracy 100 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:fighting .
+
+data:dark a poke:Type .
+
+data:dizzy_punch a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 70 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:normal .
+
+data:high_jump_kick a poke:Move ;
+    poke:accuracy 90 ;
+    poke:basePower 130 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:fighting .
+
+data:jump_kick a poke:Move ;
+    poke:accuracy 95 ;
+    poke:basePower 100 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:fighting .
+
+data:lovely_kiss a poke:Move ;
+    poke:accuracy 75 ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:normal .
+
+data:mega_kick a poke:Move ;
+    poke:accuracy 75 ;
+    poke:basePower 120 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:normal .
+
+data:rolling_kick a poke:Move ;
+    poke:accuracy 85 ;
+    poke:basePower 60 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:fighting .
+
+data:sharpen a poke:Move ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:normal .
+
+data:sky_attack a poke:Move ;
+    poke:accuracy 90 ;
+    poke:basePower 140 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:flying .
+
+data:splash a poke:Move ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:normal .
+
+data:substitute a poke:Move ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:normal .
+
+data:thunderbolt a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 90 ;
+    poke:damageClass "special" ;
+    poke:hasMoveType data:electric .
+
+data:twineedle a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 25 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:bug .
+
+poke:StatusEffect a owl:Class ;
+    rdfs:label "StatusEffect" .
+
+data:barrage a poke:Move ;
+    poke:accuracy 85 ;
+    poke:basePower 15 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:normal .
+
+data:blizzard a poke:Move ;
+    poke:accuracy 70 ;
+    poke:basePower 110 ;
+    poke:damageClass "special" ;
+    poke:hasMoveType data:ice .
+
+data:bone_club a poke:Move ;
+    poke:accuracy 85 ;
+    poke:basePower 65 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:ground .
+
+data:bonemerang a poke:Move ;
+    poke:accuracy 90 ;
+    poke:basePower 50 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:ground .
+
+data:clamp a poke:Move ;
+    poke:accuracy 85 ;
+    poke:basePower 35 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:water .
+
+data:comet_punch a poke:Move ;
+    poke:accuracy 85 ;
+    poke:basePower 18 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:normal .
+
+data:crabhammer a poke:Move ;
+    poke:accuracy 90 ;
+    poke:basePower 100 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:water .
+
+data:dig a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 80 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:ground .
+
+data:double_team a poke:Move ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:normal .
+
+data:fire_punch a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 75 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:fire .
+
+data:glare a poke:Move ;
+    poke:accuracy 100 ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:normal .
+
+data:hyper_fang a poke:Move ;
+    poke:accuracy 90 ;
+    poke:basePower 80 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:normal .
+
+data:ice_punch a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 75 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:ice .
+
+data:kinesis a poke:Move ;
+    poke:accuracy 80 ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:psychic .
+
+data:pay_day a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 40 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:normal .
+
+data:pin_missile a poke:Move ;
+    poke:accuracy 95 ;
+    poke:basePower 25 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:bug .
+
+data:spore a poke:Move ;
+    poke:accuracy 100 ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:grass .
+
+data:string_shot a poke:Move ;
+    poke:accuracy 95 ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:bug .
+
+data:super_fang a poke:Move ;
+    poke:accuracy 90 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:normal .
+
+data:thunder_punch a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 75 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:electric .
+
+data:transform a poke:Move ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:normal .
+
+data:waterfall a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 80 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:water .
+
+data:acid_armor a poke:Move ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:poison .
+
+data:bind a poke:Move ;
+    poke:accuracy 85 ;
+    poke:basePower 15 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:normal .
+
+data:constrict a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 10 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:normal .
+
+data:double_edge a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 120 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:normal .
+
+data:dream_eater a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 100 ;
+    poke:damageClass "special" ;
+    poke:hasMoveType data:psychic .
+
+data:guillotine a poke:Move ;
+    poke:accuracy 30 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:normal .
+
+data:mega_punch a poke:Move ;
+    poke:accuracy 85 ;
+    poke:basePower 80 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:normal .
+
+data:metronome a poke:Move ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:normal .
+
+data:night_shade a poke:Move ;
+    poke:accuracy 100 ;
+    poke:damageClass "special" ;
+    poke:hasMoveType data:ghost .
+
+data:petal_dance a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 120 ;
+    poke:damageClass "special" ;
+    poke:hasMoveType data:grass .
+
+data:reflect a poke:Move ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:psychic .
+
+data:skull_bash a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 130 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:normal .
+
+data:spike_cannon a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 20 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:normal .
+
+data:steel a poke:Type .
+
+data:submission a poke:Move ;
+    poke:accuracy 80 ;
+    poke:basePower 80 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:fighting .
+
+data:swords_dance a poke:Move ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:normal .
+
+data:teleport a poke:Move ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:psychic .
+
+data:tri_attack a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 80 ;
+    poke:damageClass "special" ;
+    poke:hasMoveType data:normal .
+
+data:vice_grip a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 55 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:normal .
+
+data:barrier a poke:Move ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:psychic .
+
+data:dragon_rage a poke:Move ;
+    poke:accuracy 100 ;
+    poke:damageClass "special" ;
+    poke:hasMoveType data:dragon .
+
+data:gust a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 40 ;
+    poke:damageClass "special" ;
+    poke:hasMoveType data:flying .
+
+data:leech_seed a poke:Move ;
+    poke:accuracy 90 ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:grass .
+
+data:lick a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 30 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:ghost .
+
+data:meditate a poke:Move ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:psychic .
+
+data:mist a poke:Move ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:ice .
+
+data:poison_gas a poke:Move ;
+    poke:accuracy 90 ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:poison .
+
+data:rest a poke:Move ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:psychic .
+
+data:roar a poke:Move ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:normal .
+
+data:rock_throw a poke:Move ;
+    poke:accuracy 90 ;
+    poke:basePower 50 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:rock .
+
+data:sludge a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 65 ;
+    poke:damageClass "special" ;
+    poke:hasMoveType data:poison .
+
+data:smog a poke:Move ;
+    poke:accuracy 70 ;
+    poke:basePower 30 ;
+    poke:damageClass "special" ;
+    poke:hasMoveType data:poison .
+
+data:sonic_boom a poke:Move ;
+    poke:accuracy 90 ;
+    poke:damageClass "special" ;
+    poke:hasMoveType data:normal .
+
+data:thunder a poke:Move ;
+    poke:accuracy 70 ;
+    poke:basePower 110 ;
+    poke:damageClass "special" ;
+    poke:hasMoveType data:electric .
+
+data:whirlwind a poke:Move ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:normal .
+
+data:absorb a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 20 ;
+    poke:damageClass "special" ;
+    poke:hasMoveType data:grass .
+
+data:aurora_beam a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 65 ;
+    poke:damageClass "special" ;
+    poke:hasMoveType data:ice .
+
+data:drill_peck a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 80 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:flying .
+
+data:earthquake a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 100 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:ground .
+
+data:fairy a poke:Type .
+
+data:haze a poke:Move ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:ice .
+
+data:ice_beam a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 90 ;
+    poke:damageClass "special" ;
+    poke:hasMoveType data:ice .
+
+data:karate_chop a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 50 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:fighting .
+
+data:low_kick a poke:Move ;
+    poke:accuracy 100 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:fighting .
+
+data:mirror_move a poke:Move ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:flying .
+
+data:recover a poke:Move ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:normal .
+
+data:smokescreen a poke:Move ;
+    poke:accuracy 100 ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:normal .
+
+data:amnesia a poke:Move ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:psychic .
+
+data:horn_drill a poke:Move ;
+    poke:accuracy 30 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:normal .
+
+data:hyper_beam a poke:Move ;
+    poke:accuracy 90 ;
+    poke:basePower 150 ;
+    poke:damageClass "special" ;
+    poke:hasMoveType data:normal .
+
+data:leech_life a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 80 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:bug .
+
+data:minimize a poke:Move ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:normal .
+
+data:psybeam a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 65 ;
+    poke:damageClass "special" ;
+    poke:hasMoveType data:psychic .
+
+data:razor_leaf a poke:Move ;
+    poke:accuracy 95 ;
+    poke:basePower 55 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:grass .
+
+data:seismic_toss a poke:Move ;
+    poke:accuracy 100 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:fighting .
+
+data:sing a poke:Move ;
+    poke:accuracy 55 ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:normal .
+
+data:solar_beam a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 120 ;
+    poke:damageClass "special" ;
+    poke:hasMoveType data:grass .
+
+data:thrash a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 120 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:normal .
+
+data:vine_whip a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 45 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:grass .
+
+data:explosion a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 250 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:normal .
+
+data:flamethrower a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 90 ;
+    poke:damageClass "special" ;
+    poke:hasMoveType data:fire .
+
+data:self_destruct a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 200 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:normal .
+
+data:thunder_shock a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 40 ;
+    poke:damageClass "special" ;
+    poke:hasMoveType data:electric .
+
+data:wing_attack a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 60 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:flying .
+
+data:body_slam a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 85 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:normal .
+
+data:confuse_ray a poke:Move ;
+    poke:accuracy 100 ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:ghost .
+
+data:defense_curl a poke:Move ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:normal .
+
+data:double_kick a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 30 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:fighting .
+
+data:fire_spin a poke:Move ;
+    poke:accuracy 85 ;
+    poke:basePower 35 ;
+    poke:damageClass "special" ;
+    poke:hasMoveType data:fire .
+
+data:growth a poke:Move ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:normal .
+
+data:thunder_wave a poke:Move ;
+    poke:accuracy 90 ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:electric .
+
+data:withdraw a poke:Move ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:water .
+
+data:bubble a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 40 ;
+    poke:damageClass "special" ;
+    poke:hasMoveType data:water .
+
+data:headbutt a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 70 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:normal .
+
+data:horn_attack a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 65 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:normal .
+
+data:light_screen a poke:Move ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:psychic .
+
+data:peck a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 35 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:flying .
+
+data:pound a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 40 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:normal .
+
+data:slam a poke:Move ;
+    poke:accuracy 75 ;
+    poke:basePower 80 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:normal .
+
+data:stomp a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 65 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:normal .
+
+data:swift a poke:Move ;
+    poke:basePower 60 ;
+    poke:damageClass "special" ;
+    poke:hasMoveType data:normal .
+
+data:acid a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 40 ;
+    poke:damageClass "special" ;
+    poke:hasMoveType data:poison .
+
+data:double_slap a poke:Move ;
+    poke:accuracy 85 ;
+    poke:basePower 15 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:normal .
+
+data:dragon a poke:Type ;
+    poke:superEffectiveAgainst data:dragon .
+
+data:fury_swipes a poke:Move ;
+    poke:accuracy 80 ;
+    poke:basePower 18 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:normal .
+
+data:hypnosis a poke:Move ;
+    poke:accuracy 60 ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:psychic .
+
+data:ember a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 40 ;
+    poke:damageClass "special" ;
+    poke:hasMoveType data:fire .
+
+data:ghost a poke:Type ;
+    poke:immuneAgainst data:normal,
+        data:psychic ;
+    poke:superEffectiveAgainst data:ghost .
+
+data:take_down a poke:Move ;
+    poke:accuracy 85 ;
+    poke:basePower 90 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:normal .
+
+data:wrap a poke:Move ;
+    poke:accuracy 90 ;
+    poke:basePower 15 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:normal .
+
+data:fury_attack a poke:Move ;
+    poke:accuracy 85 ;
+    poke:basePower 15 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:normal .
+
+data:sand_attack a poke:Move ;
+    poke:accuracy 100 ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:ground .
+
+data:confusion a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 50 ;
+    poke:damageClass "special" ;
+    poke:hasMoveType data:psychic .
+
+data:poison_sting a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 15 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:poison .
+
+data:rage a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 20 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:normal .
+
+data:stun_spore a poke:Move ;
+    poke:accuracy 75 ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:grass .
+
+data:poison_powder a poke:Move ;
+    poke:accuracy 75 ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:poison .
+
+data:quick_attack a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 40 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:normal .
+
+data:sleep_powder a poke:Move ;
+    poke:accuracy 75 ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:grass .
+
+data:ice a poke:Type ;
+    poke:notVeryEffectiveAgainst data:fire,
+        data:ice,
+        data:water ;
+    poke:superEffectiveAgainst data:dragon,
+        data:flying,
+        data:grass,
+        data:ground .
+
+data:supersonic a poke:Move ;
+    poke:accuracy 55 ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:normal .
+
+data:disable a poke:Move ;
+    poke:accuracy 100 ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:normal .
+
+data:focus_energy a poke:Move ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:normal .
+
+data:harden a poke:Move ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:normal .
+
+data:slash a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 70 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:normal .
+
+data:electric a poke:Type ;
+    poke:immuneAgainst data:ground ;
+    poke:notVeryEffectiveAgainst data:dragon,
+        data:electric,
+        data:grass ;
+    poke:superEffectiveAgainst data:flying,
+        data:water .
+
+data:bite a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 60 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:dark .
+
+data:screech a poke:Move ;
+    poke:accuracy 85 ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:normal .
+
+data:water_gun a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 40 ;
+    poke:damageClass "special" ;
+    poke:hasMoveType data:water .
+
+data:hydro_pump a poke:Move ;
+    poke:accuracy 80 ;
+    poke:basePower 110 ;
+    poke:damageClass "special" ;
+    poke:hasMoveType data:water .
+
+data:rock a poke:Type ;
+    poke:notVeryEffectiveAgainst data:fighting,
+        data:ground ;
+    poke:superEffectiveAgainst data:bug,
+        data:fire,
+        data:flying,
+        data:ice .
+
+data:scratch a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 40 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:normal .
+
+data:fighting a poke:Type ;
+    poke:immuneAgainst data:ghost ;
+    poke:notVeryEffectiveAgainst data:bug,
+        data:flying,
+        data:poison,
+        data:psychic ;
+    poke:superEffectiveAgainst data:ice,
+        data:normal,
+        data:rock .
+
+data:bug a poke:Type ;
+    poke:notVeryEffectiveAgainst data:fighting,
+        data:fire,
+        data:flying,
+        data:ghost,
+        data:poison ;
+    poke:superEffectiveAgainst data:grass,
+        data:psychic .
+
+data:fire a poke:Type ;
+    poke:notVeryEffectiveAgainst data:dragon,
+        data:fire,
+        data:rock,
+        data:water ;
+    poke:superEffectiveAgainst data:bug,
+        data:grass,
+        data:ice,
+        data:steel .
+
+data:ground a poke:Type ;
+    poke:immuneAgainst data:flying ;
+    poke:notVeryEffectiveAgainst data:bug,
+        data:grass ;
+    poke:superEffectiveAgainst data:electric,
+        data:fire,
+        data:poison,
+        data:rock .
+
+poke:Type a owl:Class ;
+    rdfs:label "Type" .
+
+data:agility a poke:Move ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:psychic .
+
+data:tail_whip a poke:Move ;
+    poke:accuracy 100 ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:normal .
+
+data:growl a poke:Move ;
+    poke:accuracy 100 ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:normal .
+
+data:flying a poke:Type ;
+    poke:notVeryEffectiveAgainst data:electric,
+        data:rock ;
+    poke:superEffectiveAgainst data:bug,
+        data:fighting,
+        data:grass .
+
+data:grass a poke:Type ;
+    poke:notVeryEffectiveAgainst data:bug,
+        data:dragon,
+        data:fire,
+        data:flying,
+        data:grass,
+        data:poison ;
+    poke:superEffectiveAgainst data:ground,
+        data:rock,
+        data:water .
+
+data:tackle a poke:Move ;
+    poke:accuracy 100 ;
+    poke:basePower 40 ;
+    poke:damageClass "physical" ;
+    poke:hasMoveType data:normal .
+
+data:leer a poke:Move ;
+    poke:accuracy 100 ;
+    poke:damageClass "status" ;
+    poke:hasMoveType data:normal .
+
+data:psychic a poke:Move,
+        poke:Type ;
+    poke:accuracy 100 ;
+    poke:basePower 90 ;
+    poke:damageClass "special" ;
+    poke:hasMoveType data:psychic ;
+    poke:notVeryEffectiveAgainst data:psychic ;
+    poke:superEffectiveAgainst data:fighting,
+        data:poison .
+
+data:water a poke:Type ;
+    poke:notVeryEffectiveAgainst data:dragon,
+        data:grass,
+        data:water ;
+    poke:superEffectiveAgainst data:fire,
+        data:ground,
+        data:rock .
+
+data:poison a poke:Type ;
+    poke:notVeryEffectiveAgainst data:ghost,
+        data:ground,
+        data:poison,
+        data:rock ;
+    poke:superEffectiveAgainst data:grass .
+
+data:normal a poke:Type ;
+    poke:immuneAgainst data:ghost ;
+    poke:notVeryEffectiveAgainst data:rock .
+
+poke:Move a owl:Class ;
+    rdfs:label "Move" .
+
+poke:Pokemon a owl:Class ;
+    rdfs:label "Pokemon" .
+

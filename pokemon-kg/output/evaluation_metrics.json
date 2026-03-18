@@ -1,0 +1,132 @@
+{
+  "overall": {
+    "precision": 0.0517,
+    "recall": 1.0,
+    "f1": 0.0984,
+    "true_positives": 141,
+    "false_positives": 2585,
+    "false_negatives": 0
+  },
+  "by_relation": {
+    "accuracy": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "false_positives": 117,
+      "false_negatives": 0
+    },
+    "basepower": {
+      "precision": 0.1609,
+      "recall": 1.0,
+      "f1": 0.2772,
+      "true_positives": 14,
+      "false_positives": 73,
+      "false_negatives": 0
+    },
+    "basestat_attack": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "false_positives": 151,
+      "false_negatives": 0
+    },
+    "basestat_defense": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "false_positives": 151,
+      "false_negatives": 0
+    },
+    "basestat_hp": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "false_positives": 151,
+      "false_negatives": 0
+    },
+    "basestat_special_attack": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "false_positives": 151,
+      "false_negatives": 0
+    },
+    "basestat_special_defense": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "false_positives": 151,
+      "false_negatives": 0
+    },
+    "basestat_speed": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "false_positives": 151,
+      "false_negatives": 0
+    },
+    "damageclass": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "false_positives": 147,
+      "false_negatives": 0
+    },
+    "hasmovetype": {
+      "precision": 0.0952,
+      "recall": 1.0,
+      "f1": 0.1739,
+      "true_positives": 14,
+      "false_positives": 133,
+      "false_negatives": 0
+    },
+    "hastype": {
+      "precision": 0.0596,
+      "recall": 1.0,
+      "f1": 0.1126,
+      "true_positives": 13,
+      "false_positives": 205,
+      "false_negatives": 0
+    },
+    "immuneagainst": {
+      "precision": 0.3333,
+      "recall": 1.0,
+      "f1": 0.5,
+      "true_positives": 2,
+      "false_positives": 4,
+      "false_negatives": 0
+    },
+    "learnsmove": {
+      "precision": 0.0656,
+      "recall": 1.0,
+      "f1": 0.1232,
+      "true_positives": 67,
+      "false_positives": 954,
+      "false_negatives": 0
+    },
+    "notveryeffectiveagainst": {
+      "precision": 0.4,
+      "recall": 1.0,
+      "f1": 0.5714,
+      "true_positives": 16,
+      "false_positives": 24,
+      "false_negatives": 0
+    },
+    "supereffectiveagainst": {
+      "precision": 0.4054,
+      "recall": 1.0,
+      "f1": 0.5769,
+      "true_positives": 15,
+      "false_positives": 22,
+      "false_negatives": 0
+    }
+  }
+}

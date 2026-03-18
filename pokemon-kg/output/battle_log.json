@@ -1,0 +1,455 @@
+[
+  {
+    "matchup": "charizard vs blastoise",
+    "vanilla": {
+      "turns": 5,
+      "won": false,
+      "hallucinations": 0,
+      "type_errors": 0,
+      "final_hp": "0/266"
+    },
+    "grounded": {
+      "turns": 5,
+      "won": false,
+      "hallucinations": 0,
+      "type_errors": 0,
+      "final_hp": "0/266"
+    },
+    "turn_logs": {
+      "vanilla": [
+        {
+          "turn": 1,
+          "agent": "vanilla",
+          "pokemon": "charizard",
+          "opponent": "blastoise",
+          "decision": {
+            "move": "ember",
+            "reasoning": "ember"
+          },
+          "move_used": "ember",
+          "damage_dealt": 13,
+          "was_legal": true,
+          "type_correct": true,
+          "kg_context": null,
+          "raw_llm_output": "ember"
+        },
+        {
+          "turn": 2,
+          "agent": "vanilla",
+          "pokemon": "charizard",
+          "opponent": "blastoise",
+          "decision": {
+            "move": "ember",
+            "reasoning": "ember"
+          },
+          "move_used": "ember",
+          "damage_dealt": 13,
+          "was_legal": true,
+          "type_correct": true,
+          "kg_context": null,
+          "raw_llm_output": "ember"
+        },
+        {
+          "turn": 3,
+          "agent": "vanilla",
+          "pokemon": "charizard",
+          "opponent": "blastoise",
+          "decision": {
+            "move": "ember",
+            "reasoning": "ember"
+          },
+          "move_used": "ember",
+          "damage_dealt": 13,
+          "was_legal": true,
+          "type_correct": true,
+          "kg_context": null,
+          "raw_llm_output": "ember"
+        },
+        {
+          "turn": 4,
+          "agent": "vanilla",
+          "pokemon": "charizard",
+          "opponent": "blastoise",
+          "decision": {
+            "move": "ember",
+            "reasoning": "ember"
+          },
+          "move_used": "ember",
+          "damage_dealt": 13,
+          "was_legal": true,
+          "type_correct": true,
+          "kg_context": null,
+          "raw_llm_output": "ember"
+        },
+        {
+          "turn": 5,
+          "agent": "vanilla",
+          "pokemon": "charizard",
+          "opponent": "blastoise",
+          "decision": {
+            "move": "ember",
+            "reasoning": "ember"
+          },
+          "move_used": "ember",
+          "damage_dealt": 15,
+          "was_legal": true,
+          "type_correct": true,
+          "kg_context": null,
+          "raw_llm_output": "ember"
+        }
+      ],
+      "grounded": [
+        {
+          "turn": 1,
+          "agent": "grounded",
+          "pokemon": "charizard",
+          "opponent": "blastoise",
+          "decision": {
+            "move": "slash",
+            "reasoning": "slash"
+          },
+          "move_used": "slash",
+          "damage_dealt": 27,
+          "was_legal": true,
+          "type_correct": true,
+          "kg_context": "charizard's 4 battle moves:\n  - flamethrower, type=fire, power=90, accuracy=100%, class=special\n  - slash, type=normal, power=70, accuracy=100%, class=physical\n  - scratch, type=normal, power=40, accuracy=100%, class=physical\n  - ember, type=fire, power=40, accuracy=100%, class=special\n\nType matchup vs blastoise (water):\n  flamethrower (fire) vs water: not very effective (0.5x damage)\n  slash (normal) vs water: neutral (1x)\n  scratch (normal) vs water: neutral (1x)\n  ember (fire) vs water: not very effective (0.5x damage)\n\nBEST MOVE: slash (effective power: 70)",
+          "raw_llm_output": "slash"
+        },
+        {
+          "turn": 2,
+          "agent": "grounded",
+          "pokemon": "charizard",
+          "opponent": "blastoise",
+          "decision": {
+            "move": "slash",
+            "reasoning": "slash"
+          },
+          "move_used": "slash",
+          "damage_dealt": 26,
+          "was_legal": true,
+          "type_correct": true,
+          "kg_context": "charizard's 4 battle moves:\n  - flamethrower, type=fire, power=90, accuracy=100%, class=special\n  - slash, type=normal, power=70, accuracy=100%, class=physical\n  - scratch, type=normal, power=40, accuracy=100%, class=physical\n  - ember, type=fire, power=40, accuracy=100%, class=special\n\nType matchup vs blastoise (water):\n  flamethrower (fire) vs water: not very effective (0.5x damage)\n  slash (normal) vs water: neutral (1x)\n  scratch (normal) vs water: neutral (1x)\n  ember (fire) vs water: not very effective (0.5x damage)\n\nBEST MOVE: slash (effective power: 70)",
+          "raw_llm_output": "slash"
+        },
+        {
+          "turn": 3,
+          "agent": "grounded",
+          "pokemon": "charizard",
+          "opponent": "blastoise",
+          "decision": {
+            "move": "slash",
+            "reasoning": "slash"
+          },
+          "move_used": "slash",
+          "damage_dealt": 25,
+          "was_legal": true,
+          "type_correct": true,
+          "kg_context": "charizard's 4 battle moves:\n  - flamethrower, type=fire, power=90, accuracy=100%, class=special\n  - slash, type=normal, power=70, accuracy=100%, class=physical\n  - scratch, type=normal, power=40, accuracy=100%, class=physical\n  - ember, type=fire, power=40, accuracy=100%, class=special\n\nType matchup vs blastoise (water):\n  flamethrower (fire) vs water: not very effective (0.5x damage)\n  slash (normal) vs water: neutral (1x)\n  scratch (normal) vs water: neutral (1x)\n  ember (fire) vs water: not very effective (0.5x damage)\n\nBEST MOVE: slash (effective power: 70)",
+          "raw_llm_output": "slash"
+        },
+        {
+          "turn": 4,
+          "agent": "grounded",
+          "pokemon": "charizard",
+          "opponent": "blastoise",
+          "decision": {
+            "move": "slash",
+            "reasoning": "slash"
+          },
+          "move_used": "slash",
+          "damage_dealt": 24,
+          "was_legal": true,
+          "type_correct": true,
+          "kg_context": "charizard's 4 battle moves:\n  - flamethrower, type=fire, power=90, accuracy=100%, class=special\n  - slash, type=normal, power=70, accuracy=100%, class=physical\n  - scratch, type=normal, power=40, accuracy=100%, class=physical\n  - ember, type=fire, power=40, accuracy=100%, class=special\n\nType matchup vs blastoise (water):\n  flamethrower (fire) vs water: not very effective (0.5x damage)\n  slash (normal) vs water: neutral (1x)\n  scratch (normal) vs water: neutral (1x)\n  ember (fire) vs water: not very effective (0.5x damage)\n\nBEST MOVE: slash (effective power: 70)",
+          "raw_llm_output": "slash"
+        },
+        {
+          "turn": 5,
+          "agent": "grounded",
+          "pokemon": "charizard",
+          "opponent": "blastoise",
+          "decision": {
+            "move": "slash",
+            "reasoning": "slash"
+          },
+          "move_used": "slash",
+          "damage_dealt": 26,
+          "was_legal": true,
+          "type_correct": true,
+          "kg_context": "charizard's 4 battle moves:\n  - flamethrower, type=fire, power=90, accuracy=100%, class=special\n  - slash, type=normal, power=70, accuracy=100%, class=physical\n  - scratch, type=normal, power=40, accuracy=100%, class=physical\n  - ember, type=fire, power=40, accuracy=100%, class=special\n\nType matchup vs blastoise (water):\n  flamethrower (fire) vs water: not very effective (0.5x damage)\n  slash (normal) vs water: neutral (1x)\n  scratch (normal) vs water: neutral (1x)\n  ember (fire) vs water: not very effective (0.5x damage)\n\nBEST MOVE: slash (effective power: 70)",
+          "raw_llm_output": "slash"
+        }
+      ]
+    }
+  },
+  {
+    "matchup": "pikachu vs geodude",
+    "vanilla": {
+      "turns": 1,
+      "won": false,
+      "hallucinations": 0,
+      "type_errors": 0,
+      "final_hp": "0/180"
+    },
+    "grounded": {
+      "turns": 1,
+      "won": false,
+      "hallucinations": 0,
+      "type_errors": 0,
+      "final_hp": "0/180"
+    },
+    "turn_logs": {
+      "vanilla": [
+        {
+          "turn": 1,
+          "agent": "vanilla",
+          "pokemon": "pikachu",
+          "opponent": "geodude",
+          "decision": {
+            "move": "thunder",
+            "reasoning": "thunderbolt"
+          },
+          "move_used": "thunder",
+          "damage_dealt": 1,
+          "was_legal": true,
+          "type_correct": true,
+          "kg_context": null,
+          "raw_llm_output": "thunderbolt"
+        }
+      ],
+      "grounded": [
+        {
+          "turn": 1,
+          "agent": "grounded",
+          "pokemon": "pikachu",
+          "opponent": "geodude",
+          "decision": {
+            "move": "slam",
+            "reasoning": "slam"
+          },
+          "move_used": "slam",
+          "damage_dealt": 10,
+          "was_legal": true,
+          "type_correct": true,
+          "kg_context": "pikachu's 4 battle moves:\n  - thunder, type=electric, power=110, accuracy=70%, class=special\n  - thunderbolt, type=electric, power=90, accuracy=100%, class=special\n  - slam, type=normal, power=80, accuracy=75%, class=physical\n  - swift, type=normal, power=60, class=special\n\nType matchup vs geodude (rock, ground):\n  thunder (electric) vs rock, ground: IMMUNE (0 damage) - DO NOT USE\n  thunderbolt (electric) vs rock, ground: IMMUNE (0 damage) - DO NOT USE\n  slam (normal) vs rock, ground: not very effective (0.5x damage)\n  swift (normal) vs rock, ground: not very effective (0.5x damage)\n\nBEST MOVE: slam (effective power: 40)",
+          "raw_llm_output": "slam"
+        }
+      ]
+    }
+  },
+  {
+    "matchup": "venusaur vs arcanine",
+    "vanilla": {
+      "turns": 6,
+      "won": false,
+      "hallucinations": 0,
+      "type_errors": 0,
+      "final_hp": "0/270"
+    },
+    "grounded": {
+      "turns": 6,
+      "won": false,
+      "hallucinations": 0,
+      "type_errors": 0,
+      "final_hp": "0/270"
+    },
+    "turn_logs": {
+      "vanilla": [
+        {
+          "turn": 1,
+          "agent": "vanilla",
+          "pokemon": "venusaur",
+          "opponent": "arcanine",
+          "decision": {
+            "move": "tackle",
+            "reasoning": "tackle"
+          },
+          "move_used": "tackle",
+          "damage_dealt": 18,
+          "was_legal": true,
+          "type_correct": true,
+          "kg_context": null,
+          "raw_llm_output": "tackle"
+        },
+        {
+          "turn": 2,
+          "agent": "vanilla",
+          "pokemon": "venusaur",
+          "opponent": "arcanine",
+          "decision": {
+            "move": "tackle",
+            "reasoning": "tackle"
+          },
+          "move_used": "tackle",
+          "damage_dealt": 17,
+          "was_legal": true,
+          "type_correct": true,
+          "kg_context": null,
+          "raw_llm_output": "tackle"
+        },
+        {
+          "turn": 3,
+          "agent": "vanilla",
+          "pokemon": "venusaur",
+          "opponent": "arcanine",
+          "decision": {
+            "move": "tackle",
+            "reasoning": "tackle"
+          },
+          "move_used": "tackle",
+          "damage_dealt": 19,
+          "was_legal": true,
+          "type_correct": true,
+          "kg_context": null,
+          "raw_llm_output": "tackle"
+        },
+        {
+          "turn": 4,
+          "agent": "vanilla",
+          "pokemon": "venusaur",
+          "opponent": "arcanine",
+          "decision": {
+            "move": "tackle",
+            "reasoning": "tackle"
+          },
+          "move_used": "tackle",
+          "damage_dealt": 19,
+          "was_legal": true,
+          "type_correct": true,
+          "kg_context": null,
+          "raw_llm_output": "tackle"
+        },
+        {
+          "turn": 5,
+          "agent": "vanilla",
+          "pokemon": "venusaur",
+          "opponent": "arcanine",
+          "decision": {
+            "move": "tackle",
+            "reasoning": "tackle"
+          },
+          "move_used": "tackle",
+          "damage_dealt": 17,
+          "was_legal": true,
+          "type_correct": true,
+          "kg_context": null,
+          "raw_llm_output": "tackle"
+        },
+        {
+          "turn": 6,
+          "agent": "vanilla",
+          "pokemon": "venusaur",
+          "opponent": "arcanine",
+          "decision": {
+            "move": "tackle",
+            "reasoning": "tackle"
+          },
+          "move_used": "tackle",
+          "damage_dealt": 18,
+          "was_legal": true,
+          "type_correct": true,
+          "kg_context": null,
+          "raw_llm_output": "tackle"
+        }
+      ],
+      "grounded": [
+        {
+          "turn": 1,
+          "agent": "grounded",
+          "pokemon": "venusaur",
+          "opponent": "arcanine",
+          "decision": {
+            "move": "solar-beam",
+            "reasoning": "[PARSE FAILURE] Original: solar_beam"
+          },
+          "move_used": "solar-beam",
+          "damage_dealt": 43,
+          "was_legal": true,
+          "type_correct": true,
+          "kg_context": "venusaur's 4 battle moves:\n  - solar_beam, type=grass, power=120, accuracy=100%, class=special\n  - razor_leaf, type=grass, power=55, accuracy=95%, class=physical\n  - vine_whip, type=grass, power=45, accuracy=100%, class=physical\n  - tackle, type=normal, power=40, accuracy=100%, class=physical\n\nType matchup vs arcanine (fire):\n  solar_beam (grass) vs fire: not very effective (0.5x damage)\n  razor_leaf (grass) vs fire: not very effective (0.5x damage)\n  vine_whip (grass) vs fire: not very effective (0.5x damage)\n  tackle (normal) vs fire: neutral (1x)\n\nBEST MOVE: solar_beam (effective power: 90)",
+          "raw_llm_output": "solar_beam"
+        },
+        {
+          "turn": 2,
+          "agent": "grounded",
+          "pokemon": "venusaur",
+          "opponent": "arcanine",
+          "decision": {
+            "move": "solar-beam",
+            "reasoning": "[PARSE FAILURE] Original: solar_beam"
+          },
+          "move_used": "solar-beam",
+          "damage_dealt": 49,
+          "was_legal": true,
+          "type_correct": true,
+          "kg_context": "venusaur's 4 battle moves:\n  - solar_beam, type=grass, power=120, accuracy=100%, class=special\n  - razor_leaf, type=grass, power=55, accuracy=95%, class=physical\n  - vine_whip, type=grass, power=45, accuracy=100%, class=physical\n  - tackle, type=normal, power=40, accuracy=100%, class=physical\n\nType matchup vs arcanine (fire):\n  solar_beam (grass) vs fire: not very effective (0.5x damage)\n  razor_leaf (grass) vs fire: not very effective (0.5x damage)\n  vine_whip (grass) vs fire: not very effective (0.5x damage)\n  tackle (normal) vs fire: neutral (1x)\n\nBEST MOVE: solar_beam (effective power: 90)",
+          "raw_llm_output": "solar_beam"
+        },
+        {
+          "turn": 3,
+          "agent": "grounded",
+          "pokemon": "venusaur",
+          "opponent": "arcanine",
+          "decision": {
+            "move": "solar-beam",
+            "reasoning": "[PARSE FAILURE] Original: solar_beam"
+          },
+          "move_used": "solar-beam",
+          "damage_dealt": 50,
+          "was_legal": true,
+          "type_correct": true,
+          "kg_context": "venusaur's 4 battle moves:\n  - solar_beam, type=grass, power=120, accuracy=100%, class=special\n  - razor_leaf, type=grass, power=55, accuracy=95%, class=physical\n  - vine_whip, type=grass, power=45, accuracy=100%, class=physical\n  - tackle, type=normal, power=40, accuracy=100%, class=physical\n\nType matchup vs arcanine (fire):\n  solar_beam (grass) vs fire: not very effective (0.5x damage)\n  razor_leaf (grass) vs fire: not very effective (0.5x damage)\n  vine_whip (grass) vs fire: not very effective (0.5x damage)\n  tackle (normal) vs fire: neutral (1x)\n\nBEST MOVE: solar_beam (effective power: 90)",
+          "raw_llm_output": "solar_beam"
+        },
+        {
+          "turn": 4,
+          "agent": "grounded",
+          "pokemon": "venusaur",
+          "opponent": "arcanine",
+          "decision": {
+            "move": "solar-beam",
+            "reasoning": "[PARSE FAILURE] Original: solar_beam"
+          },
+          "move_used": "solar-beam",
+          "damage_dealt": 48,
+          "was_legal": true,
+          "type_correct": true,
+          "kg_context": "venusaur's 4 battle moves:\n  - solar_beam, type=grass, power=120, accuracy=100%, class=special\n  - razor_leaf, type=grass, power=55, accuracy=95%, class=physical\n  - vine_whip, type=grass, power=45, accuracy=100%, class=physical\n  - tackle, type=normal, power=40, accuracy=100%, class=physical\n\nType matchup vs arcanine (fire):\n  solar_beam (grass) vs fire: not very effective (0.5x damage)\n  razor_leaf (grass) vs fire: not very effective (0.5x damage)\n  vine_whip (grass) vs fire: not very effective (0.5x damage)\n  tackle (normal) vs fire: neutral (1x)\n\nBEST MOVE: solar_beam (effective power: 90)",
+          "raw_llm_output": "solar_beam"
+        },
+        {
+          "turn": 5,
+          "agent": "grounded",
+          "pokemon": "venusaur",
+          "opponent": "arcanine",
+          "decision": {
+            "move": "solar-beam",
+            "reasoning": "[PARSE FAILURE] Original: solar_beam"
+          },
+          "move_used": "solar-beam",
+          "damage_dealt": 46,
+          "was_legal": true,
+          "type_correct": true,
+          "kg_context": "venusaur's 4 battle moves:\n  - solar_beam, type=grass, power=120, accuracy=100%, class=special\n  - razor_leaf, type=grass, power=55, accuracy=95%, class=physical\n  - vine_whip, type=grass, power=45, accuracy=100%, class=physical\n  - tackle, type=normal, power=40, accuracy=100%, class=physical\n\nType matchup vs arcanine (fire):\n  solar_beam (grass) vs fire: not very effective (0.5x damage)\n  razor_leaf (grass) vs fire: not very effective (0.5x damage)\n  vine_whip (grass) vs fire: not very effective (0.5x damage)\n  tackle (normal) vs fire: neutral (1x)\n\nBEST MOVE: solar_beam (effective power: 90)",
+          "raw_llm_output": "solar_beam"
+        },
+        {
+          "turn": 6,
+          "agent": "grounded",
+          "pokemon": "venusaur",
+          "opponent": "arcanine",
+          "decision": {
+            "move": "solar-beam",
+            "reasoning": "[PARSE FAILURE] Original: solar_beam"
+          },
+          "move_used": "solar-beam",
+          "damage_dealt": 48,
+          "was_legal": true,
+          "type_correct": true,
+          "kg_context": "venusaur's 4 battle moves:\n  - solar_beam, type=grass, power=120, accuracy=100%, class=special\n  - razor_leaf, type=grass, power=55, accuracy=95%, class=physical\n  - vine_whip, type=grass, power=45, accuracy=100%, class=physical\n  - tackle, type=normal, power=40, accuracy=100%, class=physical\n\nType matchup vs arcanine (fire):\n  solar_beam (grass) vs fire: not very effective (0.5x damage)\n  razor_leaf (grass) vs fire: not very effective (0.5x damage)\n  vine_whip (grass) vs fire: not very effective (0.5x damage)\n  tackle (normal) vs fire: neutral (1x)\n\nBEST MOVE: solar_beam (effective power: 90)",
+          "raw_llm_output": "solar_beam"
+        }
+      ]
+    }
+  }
+]
