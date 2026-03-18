@@ -270,6 +270,84 @@ body::after {
 
 /* Turn dots */
 .turn-section { margin-top: 14px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+/* Sprite battle banner */
+.battle-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin: 6px 0 16px;
+  padding: 16px 0;
+  background:
+    linear-gradient(180deg, transparent 0%, rgba(96,165,250,0.04) 50%, transparent 100%);
+  border-radius: var(--radius);
+  position: relative;
+}
+.battle-banner::before {
+  content: '';
+  position: absolute;
+  top: 50%; left: 10%; right: 10%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(96,165,250,0.15), transparent);
+}
+.sprite-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+.sprite-img {
+  width: 80px;
+  height: 80px;
+  image-rendering: pixelated;
+  filter: drop-shadow(0 0 12px rgba(96,165,250,0.2));
+  transition: transform 0.3s ease;
+}
+.sprite-img:hover { transform: scale(1.15); }
+.sprite-img.flip { transform: scaleX(-1); }
+.sprite-img.flip:hover { transform: scaleX(-1) scale(1.15); }
+.sprite-name {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+.sprite-types {
+  display: flex;
+  gap: 4px;
+}
+.type-pill {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+.type-fire     { background: rgba(245,125,49,0.15); color: #f57d31; border: 1px solid rgba(245,125,49,0.25); }
+.type-water    { background: rgba(100,147,235,0.15); color: #6493eb; border: 1px solid rgba(100,147,235,0.25); }
+.type-grass    { background: rgba(93,190,93,0.15); color: #5dbe5d; border: 1px solid rgba(93,190,93,0.25); }
+.type-electric { background: rgba(247,208,44,0.15); color: #f7d02c; border: 1px solid rgba(247,208,44,0.25); }
+.type-rock     { background: rgba(182,161,54,0.15); color: #b6a136; border: 1px solid rgba(182,161,54,0.25); }
+.type-ground   { background: rgba(226,191,101,0.15); color: #e2bf65; border: 1px solid rgba(226,191,101,0.25); }
+.type-flying   { background: rgba(169,143,243,0.15); color: #a98ff3; border: 1px solid rgba(169,143,243,0.25); }
+.type-poison   { background: rgba(163,62,161,0.15); color: #a33ea1; border: 1px solid rgba(163,62,161,0.25); }
+.type-normal   { background: rgba(168,167,122,0.15); color: #a8a77a; border: 1px solid rgba(168,167,122,0.25); }
+.vs-emblem {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 0 16px;
+  z-index: 1;
+  text-shadow: 0 0 20px rgba(96,165,250,0.2);
+}
 .turn-label {
   font-family: var(--font-mono);
   font-size: 9px;
@@ -515,10 +593,14 @@ body::after {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <script>
 // ── Battle data (from battle_log.json) ──
+const SPRITE_BASE = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/';
+
 const battles = [
   {
     name: "Charizard vs Blastoise",
     p1: "Charizard", p2: "Blastoise",
+    id1: 6, id2: 9,
+    types1: ["fire", "flying"], types2: ["water"],
     vanilla: { turns: [
       { move: "ember", dmg: 13 }, { move: "ember", dmg: 13 }, { move: "ember", dmg: 13 },
       { move: "ember", dmg: 13 }, { move: "ember", dmg: 15 }
@@ -532,6 +614,8 @@ const battles = [
   {
     name: "Pikachu vs Geodude",
     p1: "Pikachu", p2: "Geodude",
+    id1: 25, id2: 74,
+    types1: ["electric"], types2: ["rock", "ground"],
     vanilla: { turns: [{ move: "thunder", dmg: 1 }] },
     grounded: { turns: [{ move: "slam", dmg: 10 }] },
     vEff: "0\u00d7 (immune)", gEff: "0.5\u00d7 (resisted)"
@@ -539,6 +623,8 @@ const battles = [
   {
     name: "Venusaur vs Arcanine",
     p1: "Venusaur", p2: "Arcanine",
+    id1: 3, id2: 59,
+    types1: ["grass", "poison"], types2: ["fire"],
     vanilla: { turns: [
       { move: "tackle", dmg: 18 }, { move: "tackle", dmg: 17 }, { move: "tackle", dmg: 19 },
       { move: "tackle", dmg: 19 }, { move: "tackle", dmg: 17 }, { move: "tackle", dmg: 18 }
@@ -582,6 +668,19 @@ battles.forEach((b, idx) => {
     <div class="matchup-header">
       <div class="matchup-title">${b.p1} <span class="vs">vs</span> ${b.p2}</div>
       <div class="badge badge-win">KG +${pct}%</div>
+    </div>
+    <div class="battle-banner">
+      <div class="sprite-side">
+        <img class="sprite-img" src="${SPRITE_BASE}${b.id1}.png" alt="${b.p1}" onerror="this.style.display='none'">
+        <div class="sprite-name">${b.p1}</div>
+        <div class="sprite-types">${b.types1.map(t => `<span class="type-pill type-${t}">${t}</span>`).join('')}</div>
+      </div>
+      <div class="vs-emblem">VS</div>
+      <div class="sprite-side">
+        <img class="sprite-img flip" src="${SPRITE_BASE}${b.id2}.png" alt="${b.p2}" onerror="this.style.display='none'">
+        <div class="sprite-name">${b.p2}</div>
+        <div class="sprite-types">${b.types2.map(t => `<span class="type-pill type-${t}">${t}</span>`).join('')}</div>
+      </div>
     </div>
     <div class="cmp-grid">
       <div class="cmp-row">
