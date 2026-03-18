@@ -1,9 +1,9 @@
 # Pokemon_kg - Gen 1
 # Pokémon Knowledge Graph — LLM Grounding PoC
 
-> **Can a Knowledge Graph reduce hallucinations in a text-based Pokémon battle?**
-> This proof-of-concept builds an RDF Knowledge Graph from Gen 1 Pokémon data,
-> then pits a KG-grounded LLM agent against a vanilla LLM agent to find out.
+ **Can a Knowledge Graph reduce hallucinations in a text-based Pokémon battle?**
+ This proof-of-concept builds an RDF Knowledge Graph from Gen 1 Pokémon data,
+ then pits a KG-grounded LLM agent against a vanilla LLM agent to find out.
 ## Results
 
 ### Headline: +108% damage uplift with KG grounding
